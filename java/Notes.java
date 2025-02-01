@@ -131,10 +131,7 @@ public class Notes {
 		}
 
 		//Q. print Alphabets upperCase A-Z ?
-		
-				
-
-
+		
 		
 
 	}

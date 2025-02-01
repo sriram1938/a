@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Display</title>
+    <script>
+        function func() {
+            // Get the value entered by the user
+            let userName = document.getElementById("name").value;
+            let password = document.getElementById("password").value;
+
+            console.log(`username is ${userName}, \n password is ${password}`);
+            document.write(`password is ${password}`);
+            /* Display the data on the page
+            document.getElementById("output").innerHTML = "Name: " + userName + "<br>Password: " + password;
+            */
+        }
+        for(let i=5;i<=15;i+=3)
+        {
+            console.log(i%2==0);
+        }
+        for(let i=1;i<=10;i++)
+        {
+            if(i==5)
+        {
+            continue;
+        }
+        console.log(i);
+        }
+        const now = new Date();
+        console.log(now)
+        console.log(`full year is ${now.getFullYear()}`);
+        console.log(`present hour is ${now.getHours()}`);
+        console.log("present minute is "+now.getMinutes());
+        console.log('present seconds is '+now.getSeconds());
+        console.log(`present milli seconds is ${now.getMilliseconds()}`);
+        let num=4382;
+        let sum=0;
+        while(num>0)
+        {
+            let last=num%10;
+            sum=sum+last;
+            num=Math.floor(num/10);
+        }
+        console.log(sum);
+        for(let i=1;i<=100;i++)
+        {
+        if(i%3==0 && i%5==0)
+        {
+            console.log('fizz-buzz ='+i);
+        }
+        else if(i%3==0)
+        {
+            console.log('fizz ='+i);
+        }
+        else if(i%5==0)
+        {
+            console.log('buzz ='+i);
+        }
+        else{
+            console.log(i);
+        }
+        }
+        /*var v=confirm("are you sure to delete the record!");
+        if(v==true){
+            alert("your record deleted code : yes");
+
+        }
+        else{
+            alert("your record deleted code : no");
+        }*/
+        var num1=prompt("enter first number :");
+        var num2=prompt("enter second number :");
+
+        let n1=parseInt(num1);
+        let n2=parseInt(num2);
+
+        let res=n1+n2;
+        alert(`Addition is ${res}`);
+    </script>
+</head>
+<body>
+    <center>
+    <!--<form onsubmit="event.preventDefault(); displayData();">-->
+        <label for="name">userName: </label>
+        <input type="text" id="name" required><br><br>
+
+        <label for="Password">Password: </label>
+        <input type="password" id="password" required><br><br>
+
+        <button onclick="func()">Submit</button>
+    </form>
+
+    <!--<h3>User Data</h3>
+    <div id="output"></div>-->
+</body>
+</html>

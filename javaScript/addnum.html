@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function numberCheck()
+        {
+            let fnum=document.getElementById("n1").value;
+            let snum=document.getElementById("n2").value;
+
+            let n1=parseInt(fnum);
+            let n2=parseInt(snum);
+
+            if(n1>=0 && n2>=0){
+                let add=n1+n2;
+                alert(add);
+            }
+            else{
+                alert("please enter positive numbers");
+            }
+        }
+    </script>
+</head>
+<body>
+    <label>Enter First Number:</label>
+    <input type="number" id="n1"><br>
+    <label>Enter Second Number:</label>
+    <input type="number" id="n2"><br>
+    <button onclick="numberCheck()">add</button>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function logincheck()
+        {
+            let username=document.getElementById("username").value;
+            let password=document.getElementById("password").value;
+            if(username==="sriram" && password==="s123"){
+                alert("login success");
+            }
+            else{
+                alert("login fail");
+            }
+        }
+    </script>
+</head>
+<body>
+    <center>
+    <label>User Name:</label>
+    <input type="text" id="username" ><br>
+    <label>Password:</label>
+    <input type="text" id="password"><br>
+    <button onclick="logincheck()">login</button>
+</center>
+</body>
+</html>

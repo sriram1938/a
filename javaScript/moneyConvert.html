@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function converter()
+        {
+            let dollar=document.getElementById("d").value;
+            let dollar1=parseInt(dollar)
+            let rupees=dollar1*86;
+            document.getElementById("i").value=rupees.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+    <label>Enter Dollar:</label>
+    <input type="number" id="d" oninput="converter()"><br>
+    <label>Enter Rupees:</label>
+    <input type="number" id="i" readonly>
+</form>
+</body>
+</html>

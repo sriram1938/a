@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: rgb(84, 89, 242);
+            color: white;
+
+        }
+    
+    </style>
+    
+    <script>
+        function selection(num)
+        {
+            switch(num)
+            {
+                case 1:
+                    document.getElementById("data").innerHTML="Telugu";
+                    break;
+                case 2:
+                    document.getElementById("data").innerHTML="English";
+                    break;
+                default:
+                    document.getElementById("data").innerHTML="no language";
+                    break;
+            }
+        }
+        function operators(num)
+        {
+            let num1=document.getElementById("n1").value;
+            let num2=document.getElementById("n2").value;
+            let n1=parseInt(num1);
+            let n2=parseInt(num2);
+            switch(num)
+            {
+                case 1:
+                    let sum=n1+n2;
+                    document.getElementById("data1").innerHTML=sum;
+                    break;
+                case 2:
+                    let sub=n1-n2;
+                    document.getElementById("data1").innerHTML=sub;
+                    break;
+                case 3:
+                    let mul=n1*n2;
+                    document.getElementById("data1").innerHTML=mul;
+                    break;
+                case 4:
+                    let div=n1/n2;
+                    document.getElementById("data1").innerHTML=div.toFixed(3);
+                    break;
+                case 5:
+                    let modilo=n1%n2;
+                    document.getElementById("data1").innerHTML=modilo;
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="selection(1)">1-language</button>
+    <button type="button" onclick="selection(2)">2-language</button><br>
+
+    <fieldset>
+        <legend>output:</legend>
+    <h1 class="box" id="data"></h1>
+    </fieldset><br><br>
+
+    <label for="">Enter first number:</label>
+    <input type="number" id="n1"><br>
+    <label for="">Enter second number:</label>
+    <input type="number" id="n2"><br><br>
+    <button type="button" onclick="operators(1)">add</button>
+    <button type="button" onclick="operators(2)">sub</button>
+    <button type="button" onclick="operators(3)">mul</button>
+    <button type="button" onclick="operators(4)">div</button>
+    <button type="button" onclick="operators(5)">modulo</button>
+    
+    <fieldset>
+        <legend>output:</legend>
+    <h1 id="data1"></h1>
+    </fieldset>
+</body>
+</html>

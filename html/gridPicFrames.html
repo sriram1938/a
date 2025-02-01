@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photoframewithgrids</title>
+    <style>
+        .container-fluid{
+            justify-content: center;
+            display: flex;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            gap: 5px;
+            width: 30%;
+            border: 2px solid;
+            padding: 10px;
+            
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .box1{
+            grid-row: span 2 / auto;
+            grid-column: span 2 / auto;
+            
+        }
+        .box2{
+            grid-row: span 1 / auto;
+            grid-column: span 1 / auto;
+        }
+        .box3{
+            grid-row: span 1 / auto;
+            grid-column: span 1 / auto;
+        }
+        .box4{
+            grid-row: span 2 / auto;
+            grid-column: span 2 / auto;
+        }
+        .box5{
+            grid-row: span 1 / auto;
+            grid-column: span 2 / auto;
+        }
+        .box6{
+            grid-row: span 1 / auto;
+            grid-column: span 1 / auto;
+        }
+        .box7{
+            grid-row: span 1 / auto;
+            grid-column: span 2 / auto;
+        }
+        .box8{
+            grid-row: span 1 / auto;
+            grid-column: span 1 / auto;
+        }
+        .box9{
+            grid-row: span 2 / auto;
+            grid-column: span 2 / auto;
+        }
+        .box10{
+            grid-row: span 2 / auto;
+            grid-column: span 2 / auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+    <div class="container">
+        <div class="box1">
+            <img src="https://imgs.search.brave.com/pZAjALBzl4dMzv0UN934vLnHfG8Aki6ZyAcHT5DxnCw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTIw/MTI1MjE0OC9waG90/by9idXR0ZXJmbGll/cy5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9cDhnYzJaVERr/SkNSc0k5cjJ5SEdE/MlB5NExTdjd2em5w/SnMwTi1IM3FSST0" alt="">
+        </div>
+        <div class="box2">
+            <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=0&k=20&c=z8_rWaI8x4zApNEEG9DnWlGXyDIXe-OmsAyQ5fGPVV8=" alt="">
+        </div>
+        <div class="box3">
+            <img src="https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk=" alt="">
+        </div>
+        <div class="box4">
+            <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?cs=srgb&dl=pexels-souvenirpixels-414612.jpg&fm=jpg" alt="">
+        </div>
+        <div class="box5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbgks_bY5RVLNj7C7zl6gRwArkfELwXROa4w&s" alt="">
+        </div>
+        <div class="box6">
+            <img src="https://media.istockphoto.com/id/1550071750/photo/green-tea-tree-leaves-camellia-sinensis-in-organic-farm-sunlight-fresh-young-tender-bud.jpg?s=612x612&w=0&k=20&c=RC_xD5DY5qPH_hpqeOY1g1pM6bJgGJSssWYjVIvvoLw=" alt="">
+        </div>
+        <div class="box7">
+            <img src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg" alt="">
+        </div>
+        <div class="box8">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/kqttg280/poster/o/m/b/medium-nature-wallpaper-beautiful-nature-poster-asstore-n11-original-imag4rf9mfzpyyne.jpeg?q=20&crop=false" alt="">
+        </div>
+        <div class="box9">
+            <img src="https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg" alt="">
+        </div>
+        <div class="box10">
+            <img src="https://t4.ftcdn.net/jpg/02/01/78/01/360_F_201780104_hetXS26W8alnsbDKbpnr4sVizJfiO12w.jpg" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>

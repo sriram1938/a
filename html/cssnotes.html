@@ -1,0 +1,219 @@
+							CSS(Cascading Style Sheet)
+					To make html document stylish using CSS.
+					CSS used to Apply Styles to web pages.
+					3-ways:	1. Inline Styles
+							2. Internal Styles
+							3. External Styles
+
+					1. Inline Styles:
+						this Style can Apply to Single html element.
+						using 'STYLE' attribute we write inline Styles.
+					Ex:- 
+						<html>
+							<head>
+								<title>Inline Styles</title>
+							</head>
+							<body>
+								<h1 style='color:red'>Single element only</h1>
+							</body>
+						</html>
+						
+					! CSS Properties:
+					CSS Contains Properties,
+					Every Property have 'name & value' seperated by 'colon(:)'.
+					Syntax:-	'property:value'
+								'color:red'
+					when we take multiple properties,Every property seperated by Semi-colon.
+					EX:-	style='color:pink;text-align:center'
+						
+					2. Internal Styles:
+						this Style can Apply to Multiple elements with in same html document.
+						using </style> tag inside <head> tag we write Internal Styles.
+					Ex:-	<head>
+								<style>
+									h1{
+										color:red
+									}
+								</style>
+							</head>
+							<body>
+								<h1>Style tag inside Head tag</h1>
+								<h1>Apply to Multiple Elements within same document</h1>
+							</body>
+
+					3. External Styles:
+						we write CSS code in Seperate & Save with '.css' extension.
+						link that CSS file to html document using <link> tag.
+						External CSS code can be link to multiple html document.
+					Ex:-	#mystyle.css
+								h1{
+									color:blue;
+								}
+							#document.html
+							<head><title>CSS Styles</title>
+								<link href='mystyle.css' rel='stylesheet'>
+							</head>
+							<body>
+								<h1>Link tag inside head tag</h1>
+								<h1>Apply to Multiple html documents</h1>
+							</body>
+					
+
+					CSS Selectors:
+						Used to Target specific HTML elements & Apply Styles to them.
+						Multiple CSS Selectors,but Most Commonly Use '3'.
+							1.Element Name Selector.
+							2.Class Selector.
+							3.Id Selector.
+
+						1.Element Name Selector:
+							Based on Element Name Styles are Applied.
+							Styles Applied to All <h1> & <p> Elements.
+							Ex:-<style>
+									h1{
+										color:red;
+									}
+									p{
+										color:blue;text-align:center;
+									}
+								</style>
+
+						2.Class Selector:
+							it Starts with dot(.) followed by ClassName.
+							By use 'class' attribute to apply.
+							Multiple classes will Apply on Single element.Seperated by SPACE.
+							Ex:-.class1{
+									color:red;
+								}
+								.class2{
+									text-align:center;
+								}
+							<h1 class='class1'>color applied</h1>
+							<h2 class='class2'>text-aligned</h2>
+							<h3 class='class1 class2'>2-are applied</h3>
+
+						3.Id Selector:
+							it Starts with hash(#) followed by IdName.
+							By use 'id' attribute to apply.
+							Only one id will on Single element.(unique)
+							Ex:-#id1{
+									color:pink;
+								}
+								#id2{
+									text-align:center;
+								}
+							<h1 id='id1'>color applied</h1>
+							<h2 id='id2'>text-aligned</h2>
+							<h3 id='id1 id2'>2 not applied</h3> ERROR.
+
+
+						Font & Text Related Properties :
+
+							1.font-size	:	size of font	Ex:	%px.
+							2.font-weight : thickness		Ex: normal,bold,lighter.
+							3.font-style : style of font	Ex: normal,italic,oblique.
+							4.font-family : font family name
+															Ex:Arial,sans-sarif;
+															   Arial,Helvetica,sans-sarif;
+
+							1.line-height : space b/w lines of text.
+							2.letter-spacing : space b/w letters.
+							3.word-spacing : space b/w words.
+							4.text-transorm : Capitalization Ex:(upper,lowerCase,Capitalize).
+							5.text-align : Horizental Alignment Ex:left,right,center.
+							6.text-indent : Indentation of first line in a text block.
+							7.text-decoration : Adds/Remove text decorations.
+													Ex: underline,overline,line-through.
+							8.text-shadow : Adds a shadow effect to text 
+													Ex: 'text-shadow:2px 2px 5px gray;'
+							
+							Cascading : Applying Styles based on priority.
+								Inline styles > Internal styles > External styles.
+								ID selector > Class selector > Element Name selector.
+
+						!important means important having highest priority in CSS.
+
+
+						1.Universal selector(*) : selects all elements on page.
+								*{
+									color:red;
+									font-style:italic;
+								}
+						2.Group selector : selects multiple elements at once.
+								h1,h2,h3{
+									font-family:Arial,sans-serif;
+									}
+						3.Descendant selector : select elements that are descendant of
+													a specific element.
+								div p{
+										color:green;
+									}
+							the styles are applied on div element paragraph.
+
+								div p span{
+										color:red;
+										font-style:italic;
+									}
+							the styles are applied div element paragraph span.
+
+
+
+										Box Model:
+							Box Model Contains the 4-Elements:
+								1.Content : Actual content of element like text,image.
+								2.Border : Border Around Box.
+								3.Padding : Space b/w Content & it's Border.(inside)
+								4.Margin : Space b/w Box & Box.(outside)
+
+							Padding Properties :
+								padding-top: 5px;
+								padding-right: 10px;
+								padding-bottom: 15px;
+								padding-left: 20px;
+
+								padding: 5px 10px 15px 20px; (top,right,bottom,left).
+								padding: 5px 10px; (top/bottom:5px, right/left:10px).
+								padding:10px; (all sides have 10 pixels).
+
+							Margin Properies :
+								margin-top: 5px;
+								margin-right: 10px;
+								margin-bottom: 15px;
+								margin-left: 20px;
+
+								margin: 5px 10px 15px 20px; (top,right,bottom,left).
+								margin: 5px 10px; (top/bottom:5px, right/left:10px).
+								margin: 10px; (all sides have 10 pixels).
+
+							Boreder Properies :
+								border: 3px solid red;
+								border: 5px dashed green;
+								border: 2px double blue;
+								border: 5px dotted orange;
+
+								border-top: 3px solid red;
+								border-right: 5px dashed green;
+								border-bottom: 2px double blue;
+								border-left: 5px dotted orange;
+
+								border-radius: 10px;
+								border-top-left-radius: 10px;
+								border-top-right-radius: 10px;
+								border-bottom-left-radius: 10px;
+								border-bottom-right-radius: 10px;
+
+								box-shadow: 20px 20px 20px;(Hori,Verti,Blur).
+								height: 50px;
+								width: 80px;
+
+
+
+
+
+
+
+
+
+
+								
+

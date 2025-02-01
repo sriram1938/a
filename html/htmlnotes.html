@@ -1,0 +1,237 @@
+<html></html>		HTML root tag
+<head></head>		Head tag
+<title></title>		Title tag
+<body></body>		Body tag
+<h1><h2>..<h6>		Heading tags
+<hr>				Horizental line tag
+<p>	</p>			Paragraph tag
+<pre></pre>			Paragraph tag as it is
+<b> </b>			Bold tag
+<i> </i>			Italic tag
+<q> </q>			Quotation tag
+<u> </u>			Underline tag
+<br>				Break tag
+<small></small>		Small tag
+<del></del>			Delete tag
+<mark></mark>		Mark tag
+<strong></strong>	Strong tag
+<sup></sup>			super tag
+<sub></sub>			sub tag
+<ol><li></li></ol>	ordered list tag
+<ul><li></li></ul>	un-ordered list tag
+<dl><dt></dt><dd></dd></dl>	Definition list 
+&copy;				Entity with name
+&#1938;				Entity with code
+<label></label>		Label tag	 
+
+
+
+
+
+
+
+
+
+	<a href='url'target='_blank'rel='relation'title='title'type='filetype'accesskey='e'
+		href(Hyperlink Reference):specifies the URL/path to navigate to.
+		target='defines where to open the linked document.'
+			some targets:'_self'=Opens in the same tab.
+					'_blank'=Opens in a new tab.
+					'_parent'=Opens in the parent framee.
+					'_top'=Opens in the full body of the window.
+		rel='the relationship b/w the current and linked document.'
+		title='Provides additional information about the link as a tooltip.'
+		type='specifies the type of the linked resource(less used).'
+		accesskey='provides a shortcut key to focus/activate the link.' >name of link</a>
+
+
+
+
+
+	<img src='D:\folder\image.jpg'alt='not found'width='100'height='100'title='image'
+		src='location of the image'(Source).
+		alt='provides text for image if it cannot be displayed'(Alternative Msg).
+		width='width of the image'
+		height='height of the image'
+		title='provides additional information about the image,displayed as tooltip'>
+		
+
+
+
+
+
+
+
+
+	<form action='URL'method='Post/Get'enctype='text/plain'target='_blank'novalidate 
+	name='formname'autocomplete='on/off'
+		action='where the form data should be sent after submission'
+		method='type of privacy'
+			GET:Sends data as URL parameters(visible in the URL).
+			POST:Sends data in the request body(more secure).
+		enctype='how the form data should be encoded when submit it to server'
+		target='specifies where to display the response after submit the form'
+			('_self','_blank','_parent' & '_top').
+		novalidate='indicates that form should not be validate before submit'
+		name='specifies a name for the form'
+		autocomplete='Controls whether the browser should auto-fill form fields'
+	></form>
+		
+		
+		
+
+
+
+
+	<input type='text'id='usrname'name='usrname'value='raam'placeholder='sri'required readonly disabled min='5'maxlength='20' max='20'pattern='[A-Za-z]{5,}'autocomplete='on/off'step='5'multiple size='20'
+		type='type of input field'
+		name='name of input,when submitting form data'
+		value='set the default value of input field'
+		placeholder='provides a short hint inside the input field about what to enter'
+		required='Ensures the field must be filled out before form submit'
+		readonly='makes the field non-editable'
+		disabled='disables the input field so it cannot be interacted with'
+		maxlength min='sets the maximum & minimum number of characters allowed'
+		pattern='sets a regular expression for input validation'
+		autocomplete='controls whether the browser should auto-fill the input field'
+		step='controls the allowed range and step increment for numbers'
+		multiple='allows multiple values to be selected or entered'
+		size='sets the visible width of input field in characters'>
+
+
+
+
+	
+
+	Text-Based Inputs:
+		<input type='text'		name='Single-line text input'>
+		<input type='password'	name='masks/hide the characters'>
+		<input type='email'		name='validates email addresses'>
+		<input type='search'	name='Styled for search inputs'>
+		<input type='tel'		name='for phone/mobile numbers'>
+		<input type='url'		name='Validates URLs'>
+
+	Numeric Inputs:
+		<input type='number'	name='numeric input'>
+		<input type='range'		name='slider for numeric i/p within a range'>
+
+	Date and Time Inputs:
+		<input type='date'				name='for selecting a date'>
+		<input type='datetime-local'	name='selecting date and time(without timezone)'>
+		<input type='month'				name='selecting a month and year'>
+		<input type='week'				name='selcting a week of the year'>
+		<input type='time'				name='selecting time'>
+	
+	Choices and Options:
+		<input type='radio'		name='Single-choice option'>
+				<!--input type="radio"	name="gender" value="male"--> Male  
+				<!--input type="radio"	name="gender" value="female"--> Female
+		<input type='checkbox'	name='multiple-choice option'>
+				<!--input type="checkbox" name="subscribe" checked--> Subscribe to newsletter
+		<input type='color'		name='Color picker'>
+
+
+
+	File and Media Inputs:
+		<input type='file'		name='upload system files/documents'>
+			
+	Buttons and Actions:
+		<input type='submit'	name='to send form data to server'>
+		<input type='reset'		name='resets the form to their default values '>
+		<input type='button'	name='A button that perform an action'>
+		<input type='image'		name='an image to act as a form submission button'>
+
+	Hidden Inputs:
+		<input type='hidden'	name='invisible input field/to store data that is not visible to user'>
+
+
+
+	<textarea>
+	Used for multi-line text input(like a comment box).
+	<textarea name="message" rows="4" cols="50" placeholder="Enter your message here..."></textarea>
+
+	<select>
+	Provides a dropdown menu for selecting an option.can contain multiple<option> elements
+		<select name="country">
+			<option value="i">India</option>
+			<option value="a">America</option>
+		</select>
+
+	<button>
+	It can trigger actions often used for form submission or to execute JavaScript.
+		<button type="submit">Submit</button>
+
+	<label>
+	Defines labels for <input>,<textarea>,<select>,and other form elements.helps understanding give i/p.
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username">
+
+	<output>
+	Displays the result of a calculation/user input (for JavaScript to show o/p of dynamic changes).
+		<output name="result" for="a b">0</output>
+
+
+
+	<datalist>
+	Provides a list of predefined options for an <input>element.it offers suggestion while 
+	user types in the input field.
+			<input list="browsers" name="browser" id="browser">
+			<datalist id="browsers">
+				<option value="Chrome">
+				<option value="Firefox">
+				<option value="Safari">
+			</datalist>
+
+	<fieldset>and<legend>
+	Used to group related elements in a form,usually for better visual structure.
+	<legend> Provides a title for the group of elements.
+			<fieldset>
+				<legend>Personal Information</legend>
+				<input type="text" name="first-name" placeholder="First Name">
+				<input type="text" name="last-name" placeholder="Last Name">
+			</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

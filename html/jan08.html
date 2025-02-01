@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jan08</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-areas: "header header header""left-sidebar main-content right-sidebar""footer footer footer";
+            grid-template-rows: 120px 100% 70px;
+            grid-template-columns: 200px 1fr 200px;
+            gap: 10px;            
+            background-color: rgb(223, 219, 8);
+        }
+        .header{
+            grid-area: header;
+            display: grid;
+            grid-template-rows: auto auto;
+        }
+        .header .row1{
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 20px;
+            color: rgb(34, 141, 7);
+        }
+        .header .row1 .logo{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .header .row1 .title{
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .header .row1 .search-bar input{
+            border-radius: 30px;
+            width: 150px;
+            padding: 5px;
+            font-size: 20px;
+            border: 1px solid aquamarine;
+        }
+        .header .row1 .search-bar button{
+            color: rgb(249, 249, 247);
+            background-color: rgb(7, 126, 223);
+            text-transform: uppercase;
+            font-size: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        .header .row2{
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+        }
+        .header .row2 a{
+            color: rgb(4, 115, 241);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 20px 0px 20px;
+            border-radius: 15px;
+            justify-content: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: skyblue;
+        }
+        .header .row2 a:hover{
+            background-color: #0ebbc8;
+            transition: 0.5s;
+            transform: scale(1.05);
+            color: white;
+        }
+        .left-sidebar{
+            grid-area: left-sidebar;
+            background-color: rgb(35, 194, 212);
+            border-radius: 30px;
+        }
+        .right-sidebar{
+            grid-area: right-sidebar;
+            background-color: rgb(46, 199, 176);
+            text-align: left;
+            line-height: 50px;
+            border-radius: 30px;
+        }
+        .right-sidebar h3{
+            color: rgb(22, 115, 115);
+            background-color: rgb(212, 154, 83);
+            border-radius: 20px;
+            text-align: center;
+        }
+        .right-sidebar a{
+            color: aliceblue;
+            text-align: right;
+        }
+        .footer{
+            grid-area: footer;
+            text-align: center;
+            background-color: cadetblue;
+            color: aliceblue;
+        }
+        .main-content{
+            grid-area: main-content;
+            background-color: aquamarine;
+            border-radius: 30px; 
+        }
+        .bt{
+            color: aquamarine;
+            background-color: rgb(34, 140, 240);
+            height: 30px;
+            border-radius: 40px;
+            padding: 10px;
+        }
+        .main-content iframe{
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="row1">
+                <div class="logo">🥦Logo</div>
+                <div class="title">Vegetable Market</div>
+                <div class="search-bar"><input type="text" placeholder="Search...🔍"><button class="bt" type="submit">go</button></div>
+            </div>
+            <div class="row2">
+                <a href="home.html"target="myframe">Home</a>
+                <a href="jan06task1.html" target="myframe">VegItems</a>
+                <a href="non-vegitems.html"target="myframe">Non-VegItems</a>
+                <a href="milk.html"target="myframe">Milk</a>
+                <a href="">Contact Us</a>
+            </div>
+        </header>
+        <aside class="left-sidebar">
+            <marquee behavior="alt" direction="down" scrollamount="15s">
+            <img src="https://imgs.search.brave.com/rjqYkxudp8bChzQCOv3M0GpOlD0ikWSBGObn6pTPXoc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL25ld19nYWxs/ZXJ5LzU4LTU4MzM5/Nl92ZWdldGFibGUt/ZG93bmxvYWQtcG5n/LWltYWdlLXZlZ2V0/YWJsZS5wbmc"width="200">
+            <img src="https://imgs.search.brave.com/hcWODHxUlXVng9VDD4cuY3Bhli3t_m1LkcD60_Wy97k/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMTAvUG9y/ay1QTkctUGljLnBu/Zw"width="200">
+            <img src="https://imgs.search.brave.com/c4XI8rPnExy-n8yVKakKvGpiBqV7tsDDmZLi8aTrI6w/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvNS9Qb3Vy/aW5nLU1pbGstU3Bs/YXNoLVRyYW5zcGFy/ZW50LnBuZw"width=150>
+            <img src="https://imgs.search.brave.com/OR9sXs_I4byIFQWbKWdhgWGVHfWt8NPx0Dd3JiONsb4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL3RvbWF0by1w/bmctaGQtY2xpcGFy/dC1pbmZvLXRvbWF0/by1oZC1wbmctMzky/My5wbmc"width=180>
+            <img src="https://imgs.search.brave.com/4MtL3Yp1wF1KldI2J1bt2WDm0xWv0YAaq3rBVdS7z-E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5ncGxheS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzEwL0Jv/dHRsZS1Hb3VyZC1Q/TkctQmFja2dyb3Vu/ZC5wbmc"width=180>
+            <img src="https://imgs.search.brave.com/ijVk8o6Kd2X_OAZE9xvn23Ew2HwTafWpVsHaCWJ-9LM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbmdm/cmUuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy9DYXBzaWN1bS0y/NC0xMDI0eDg1NS5w/bmc"width=180>
+        </marquee>
+        </aside>
+        <aside class="right-sidebar">
+            <h3>Available Links :</h3>
+            <a href="">Price Drop vegetable</a><br>
+            <a href="">Discounts</a><br>
+            <a href="">Offers</a><br>
+            <a href="">Your Cart</a>
+        </aside>
+        <main class="main-content">
+            <iframe src="home.html" name="myframe" height="100%"width="100%">Please click On the Above Options</iframe>
+        </main>
+        <footer class="footer">
+            Project by Raam <br>&copy;2024 Mr.Raam Project.All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

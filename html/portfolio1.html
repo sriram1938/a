@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-areas: "lsidebar main";
+            grid-template-rows: auto;
+            grid-template-columns: 300px auto;
+            border: 2px solid;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: #3c3b3b;
+            gap: 10px;
+            border-radius: 10px;
+        }
+        .left-aside{
+            grid-area: lsidebar;
+            padding: 10px;
+            width: 270px;
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: #f1f1f1;
+            text-align: left;
+            border-radius: 10px;
+        }
+        .left-aside:hover{
+            transform: scale(1.05);
+        }
+        .main-content{
+            grid-area: main;
+            padding: 10px;
+            margin: 20px;
+            text-align: left;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            background-color: #f1f1f1;
+            border-radius: 10px;
+
+        }
+        .main-content:hover{
+            transform: scale(1.05);
+        }
+        .main-content h1{
+            font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <aside class="left-aside">
+            <img src="https://shahidpl.github.io/portfolio.github.io/assets/images/my-avatar.png" alt="">
+            <h1>BADISA SRIRAM</h1>
+            <h4>JAVA FULL STACK DEVELOPER</h4>
+            <hr>
+            <i class="fa-solid fa-envelope"></i>
+            Email : srirambadisa1938@gmail.com<br><br>
+            <i class="fa-solid fa-phone"></i>
+            Phone : +91 9553736290<br><br>
+            <i class="fa-regular fa-calendar-days"></i>
+            Birthday: 17/09/2002<br><br>
+            <i class="fa-solid fa-location-dot"></i>
+            Location : Chinthal,Hyderabad
+            </aside>
+        <main class="main-content">
+            <h2>About me</h2>
+            <p>I'm fullstack developer and system admin from Vissannapeta,Krishna,Andhara pradesh. I'm passionate about building web applications and solving complex problems.
+                <h2>Objective</h2>
+                <p>To be an excellent professional and to be a part of an organization which provides
+                    constant learning of latest technological upgrades, and provides career growth.</p>
+                <h2>Education</h2>
+                <ul>
+                    <li>Graduated as Bachelor of Technology from Krishna University
+                        Rudravaram,Machilipatnam in the year 2021-2024 with an
+                        aggregate of 74%.
+                        </li><br>
+                        <li>
+                            Completed Intermediate from the Board of Intermediate
+Education Andhra Pradesh in the year 2018-2020 with an
+aggregate of 93%.
+                        </li><br>
+                        <li>
+                            Completed S.S.C from the Board of Secondary School Education
+Andhra Pradesh in the year 2017-2018 with an aggregate of 90%.
+                        </li>
+                </ul>
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>Languages Known :- core java and OOPS Concepts.
+                        Oracle(DDL,DML,DQL,TCL & DCL).
+                        HTML5 , Advance java Baiscs. 
+                       </li>
+                </ul>
+        </main>
+    </div>
+</body>
+</html>

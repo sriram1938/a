@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jan07</title>
+    <link rel="stylesheet" href="\css\jan06task1.css">
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-areas: "header header header""left-sidebar main-content right-sidebar""footer footer footer";
+            grid-template-rows: 120px 1fr 70px;
+            grid-template-columns: 200px 1fr 200px;
+            gap: 10px;
+            
+            background-color: rgb(242, 239, 57);
+        }
+        .header{
+            grid-area: header;
+            display: grid;
+            grid-template-rows: auto auto;
+        }
+        .header .row1{
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 20px;
+            color: rgb(34, 141, 7);
+            
+
+        }
+        .header .row1 .logo{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .header .row1 .title{
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .header .row1 .search-bar input{
+            border-radius: 30px;
+            width: 150px;
+            padding: 5px;
+            font-size: 20px;
+            border: 1px solid aquamarine;
+        
+        }
+        .header .row2{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .header .row2 a{
+            color: rgb(17, 109, 201);
+            text-decoration: none;
+            font-size: large;
+            padding: 10px 20px 0px 20px;
+            border-radius: 15px;
+
+        }
+        .header .row2 a:hover{
+            background-color: #0ebbc8;
+            transition: background-color 1s ease;
+
+        }
+        
+        .left-sidebar{
+            grid-area: left-sidebar;
+            background-color: rgb(43, 208, 226);
+            
+        }
+        .right-sidebar{
+            grid-area: right-sidebar;
+            background-color: rgb(43, 226, 198);
+            text-align: left;
+            line-height: 50px;
+
+        }
+        .footer{
+            grid-area: footer;
+            text-align: center;
+            background-color: cadetblue;
+            color: aliceblue;
+        }
+        .main-content{
+            grid-area: main-content;
+            background-color: aquamarine;
+            
+        }
+        .bt{
+            color: aquamarine;
+            background-color: rgb(34, 140, 240);
+            height: 30px;
+            border-radius: 40px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header">
+            <div class="row1">
+                <div class="logo">🥦Logo</div>
+                <div class="title">Vegetable Market</div>
+                <div class="search-bar"><input type="text" placeholder="Search...🔍"><button class="bt" type="submit">go</button></div>
+            </div>
+            <div class="row2">
+                <a href="">Home</a>
+                <a href="">VegItems</a>
+                <a href="">Non-VegItems</a>
+                <a href="">Milk</a>
+                <a href="">Contact Us</a>
+            </div>
+        </header>
+        <aside class="left-sidebar">
+            <marquee behavior="" direction="up" scrollamount="15s">
+            <img src="https://pluspng.com/img-png/carrot-png-carrot-png-image-180.png">
+            <img src="https://imgs.search.brave.com/XklWHEHoKA_98V9dsdhvGSgIVTBchbVIE55p3ymPfzs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvOS9MYWR5/LUZpbmdlci1Pa3Jh/LnBuZw"width="180">
+            <img src="https://imgs.search.brave.com/xaGvwu8h3XcNggy2vvj4rZ3PlIOY_J07VmVAtklcp_g/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvYmVldC9zbWFs/bC9iZWV0X1BORzUy/LnBuZw"width=200">
+            <img src="https://imgs.search.brave.com/OR9sXs_I4byIFQWbKWdhgWGVHfWt8NPx0Dd3JiONsb4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL3RvbWF0by1w/bmctaGQtY2xpcGFy/dC1pbmZvLXRvbWF0/by1oZC1wbmctMzky/My5wbmc"width=180>
+            <img src="https://imgs.search.brave.com/4MtL3Yp1wF1KldI2J1bt2WDm0xWv0YAaq3rBVdS7z-E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5ncGxheS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzEwL0Jv/dHRsZS1Hb3VyZC1Q/TkctQmFja2dyb3Vu/ZC5wbmc"width=180>
+            <img src="https://imgs.search.brave.com/ijVk8o6Kd2X_OAZE9xvn23Ew2HwTafWpVsHaCWJ-9LM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbmdm/cmUuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy9DYXBzaWN1bS0y/NC0xMDI0eDg1NS5w/bmc"width=180>
+        </marquee>
+        </aside>
+        <aside class="right-sidebar">
+            <h3>Available Links :</h3>
+            <a href="">Price Drop vegetable</a><br>
+            <a href="">Discounts</a><br>
+            <a href="">Offers</a><br>
+            <a href="">Your Cart</a>
+        </aside>
+        <main class="main-content">
+            <div class="container">
+        
+                <div class="card">
+                    <img src="https://imgs.search.brave.com/XklWHEHoKA_98V9dsdhvGSgIVTBchbVIE55p3ymPfzs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYWxsLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvOS9MYWR5/LUZpbmdlci1Pa3Jh/LnBuZw"width=250>
+                    <h3>Ladyfinger (Bendi)</h3>
+                    <h3>Price: &#8377;50/kg</h3>
+                    <p>Ladyfinger is a healthy vegetable rich in rich and fiber.</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="card">
+                    <img src="https://imgs.search.brave.com/OR9sXs_I4byIFQWbKWdhgWGVHfWt8NPx0Dd3JiONsb4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL3RvbWF0by1w/bmctaGQtY2xpcGFy/dC1pbmZvLXRvbWF0/by1oZC1wbmctMzky/My5wbmc"width=250>
+                    <h3>Tomato</h3>
+                    <h3>Price: &#8377;30/kg</h3>
+                    <p>Tomatos are juicy and perfect for salads and curries.</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="card">
+                    <img src="https://imgs.search.brave.com/xaGvwu8h3XcNggy2vvj4rZ3PlIOY_J07VmVAtklcp_g/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbmdp/bWcuY29tL3VwbG9h/ZHMvYmVldC9zbWFs/bC9iZWV0X1BORzUy/LnBuZw"width=250>
+                    <h3>Beetroot</h3>
+                    <h3>Price: &#8377;40/kg</h3>
+                    <p>Beetroots are rich in iron and essential nutrients.</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="card">
+                    <img src="https://imgs.search.brave.com/V0_avm73xRJaLepYKv8rhumVgL9WBHH69yUxYwfnsEg/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMTUvQml0/dGVyLUdvdXJkLUZy/ZXNoLVBORy5wbmc"width=250>
+                    <h3>Bitter Gourd</h3>
+                    <h3>Price: &#8377;350/kg</h3>
+                    <p>Bittergourds are great for blood sugar regulation.</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="card">
+                    <img src="https://imgs.search.brave.com/4MtL3Yp1wF1KldI2J1bt2WDm0xWv0YAaq3rBVdS7z-E/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5ncGxheS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzEwL0Jv/dHRsZS1Hb3VyZC1Q/TkctQmFja2dyb3Vu/ZC5wbmc"width=250>
+                    <h3>Bottle Gourds</h3>
+                    <h3>Price: &#8377;25/kg</h3>
+                    <p>Bottle gourds are light and easy to digest.</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="card">
+                    <img src="https://imgs.search.brave.com/ijVk8o6Kd2X_OAZE9xvn23Ew2HwTafWpVsHaCWJ-9LM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbmdm/cmUuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy9DYXBzaWN1bS0y/NC0xMDI0eDg1NS5w/bmc"width=250>
+                    <h3>Capsicum</h3>
+                    <h3>Price: &#8377;60/kg</h3>
+                    <p>Capsicum add flavor and color to your dishes.</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="card">
+                    <img src="https://imgs.search.brave.com/nUmkxswPAdbSmlGRt9EcWOff8IdzQOKYcxyuLuqEKv0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5ncGxheS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzEzL0xp/bWEtQmVhbnMtVHJh/bnNwYXJlbnQtSW1h/Z2UucG5n"width=250>
+                    <h3>Beans</h3>
+                    <h3>Price: &#8377;45/kg</h3>
+                    <p>Beans are packed with protiens and vitamins.</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="card">
+                    <img src="https://imgs.search.brave.com/yXubjpBv4ntmatQxgMKVvqjG4sFSbu1ZUzOx9zD0lts/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL2NhcnJvdC1w/bmctY2Fycm90LXBu/Zy1pbWFnZS1wbmct/aW1hZ2UtMzAwMC5w/bmc"width=250>
+                    <h3>Carrot</h3>
+                    <h3>Price: &#8377;50/kg</h3>
+                    <p>Carrots are rich in vitamin A and good for eye sight.</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            Project by Raam <br>&copy;2024 Mr.Raam Project.All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,237 +1,676 @@
-<html></html>		HTML root tag
-<head></head>		Head tag
-<title></title>		Title tag
-<body></body>		Body tag
-<h1><h2>..<h6>		Heading tags
+	HTML(HyperTextMarkupLanguage)
+
+Hypertext means Hyperlinks navigating to other pages.
+Markup Language means consists set of tags.
+
+HTML code is executed by web browsers such as Google, Firefox, Safari etc...
+HTML is used to create web pages.
+
+A web page contain forms, sends input to server.
+Ex: -	login form, register form.
+
+Tables/Lists used to display data received from server.
+Ex: -	Products in Table/
+	Movies in List format
+
+HTML used to:
+	Develop front-end
+	Create simple webpage
+	Create complex e-commerce site (amazon, Flipkart)
+
+Html: create web page
+CSS: apply styles to web page
+JavaScript: perform the Validations.
+
+Structure:
+
+1.<!DOCTYPE html>	Document type declaration
+	Represents html version, 
+	if we remove by default html will take it
+
+2.	<html lang="en">	Root element, it contains 2 sub elements
+
+3.<head>	Head section
+	Contains meta-information about html document such as page title
+	CSS file link, js file link, bootstrap link…etc
+	Head tag information not visible in webpage.
+
+4.<body>	Body section
+	Contains main visible page content
+	Text heading, paragraph data, image, hyperlinks, tables, lists…etc
+	Body tag data visible in web page.
+
+
+
+Steps: 	
+1. write the code
+2. save the code with ‘.html’ extension
+3. open saved file to see output.
+
+Example: -
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Welcome to HTML Class</h1>
+	</body>
+</html>
+
+
+HTML elements consist of
+	1.opening tag	<>
+	2.closing tag	</>
+	3.content of the element.
+	4.Attribute.
+	5.value.
+
+2 types elaments:-
+
+1.Inline elements
+Does not start the new line
+Ex: -	<br>, <i>, <mark>, <del>, <span> …etc
+	
+2.Block level elements
+starts a new line
+.0Ex: -	<h1>, <p>, <pre> …etc
+
+
+2 types tags:-
+
+1.Paired tags: 
+must contains opening and closing tag.
+Ex: -	<p> paragraph </p>
+	<h1> head tag </h1>
+
+2.Unpaired tags: 
+contains only opening tag.
+Self-closing / empty / void tags.
+Ex: -	<img>, <br>, <hr> …etc
+
+
+
+	
+
+		Lists:
+	
+Display the data in proper format
+3-types of lists:
+	1.ordered list <ol>
+	2.un-ordered list <ul>
+	3.definition list <dl>
+
+Ordered list:
+Sequence is important for the data then use ‘ol’.
+Ex: -	curry preparing steps
+	Top 10 movies / authors / etc... lists.
+	Employee on boarding process.
+Starts with <ol> each list item starts with <li> tag
+	
+Syntax: <ol>
+		<li> item-1 </li>
+		<li> item-2 </li>
+		<li> item-3 </li>
+	</ol>
+	
+By default, the sequence is number ‘1,2,3….’
+Use type attribute to take different sequence values
+<ol>			1 2 3 4 5 …
+<ol type=’i’>		i ii iii iv v …
+<ol type=’I’>		I II III IV V …
+<ol type=’a’>		a b c d e ….
+<ol type=’A’>		A B C D E ….
+<ol start=’5’>		it will Starts from 5 onwards.
+<ol reversed>		takes number from reverse order.
+
+
+Un-Ordered list:
+Sequence is not important for the data then use ‘ul’
+Ex: -	job oriented training program benefits
+	Items to buy at the supermarket
+	e-commerce site display product details
+starts with <ul> each list item starts with <li> tag
+	
+Syntax: <ul>
+		<li> item-1 </li>
+		<li> item-2 </li>
+		<li> item-3 </li>
+	</ul>
+	
+By default, Un-ordered list display the data with bullets format
+Use type attribute to take different sequence values
+<ul type=’circle’>	display an empty circle
+<ul type=’square’>	display a filled square
+
+	
+Definition/Description list:
+A definition list is used to create a list of terms and their description.
+There are just like question & answer format.
+	
+Starts with <dl> tag consists 2 sub tags
+<dt>	definition term (question format)
+<dd>	definition description (answer format)
+	
+Syntax: <dl>
+		<dt>what is ur name? </dt>
+		<dd>my name is sriram </dd>
+	</dl>
+
+Nested list:
+Declaring the list inside another list
+This can be used to represent multi-level data
+Such as categories & sub categories.
+
+
+		HTML entities / symbols:
+
+Entities are symbols in html
+In 2-ways we can represent entity
+	
+1.Entity name:
+	starts with ‘&’ ends with semicolon ‘ ; ’
+	Ex: - &copy;	&reg;	&spades;
+2.Entity number:
+	starts with ‘&#’ ends with ‘ ; ’
+	Ex: - &#60;	&#8377;
+
+To check these entities by using website
+https://entitycode.com
+
+nrml space	&nbsp;
+tab space	&emsp;
+
+
+			image tag:
+
+	used to display images in an html page.
+<img src='D:\folder\image.jpg' alt='not found' width='100' height='100' title='image'>
+
+	src='location of the image'(Source).
+	alt='provides text for image if it cannot be displayed'(Alternative Msg).
+	width='width of the image'
+	height='height of the image'
+	title='provides additional information about the image, displayed as tooltip'
+
+
+
+
+
+
+	
+			Anchor tag <a>
+
+Used to create hyperlinks that navigating to another webpage.
+<a href='url' target='_blank'rel='relation'title='title'type='filetype'accesskey='e'>name of link</a>
+				
+	href (Hyperlink Reference): specifies the URL/path to navigate to.
+	target='defines where to open the linked document.'
+		some targets:	'_self'=Opens in the same tab.
+				'_blank'=Opens in a new tab.
+				'_parent'=Opens in the parent frame.
+				'_top'=Opens in the full body of the window.
+	rel='the relationship b/w the current and linked document.'
+	title='Provides additional information about the link as a tooltip.'
+	type='specifies the type of the linked resource (less used).'
+	accesskey='provides a shortcut key to focus/activate the link.'
+
+
+HTML comments:
+1.used to write the description about the code.
+2.used to disable the specific code.
+3.the comments are non-executable code.
+Syntax: <!--html comments-->
+
+		
+	
+		HTML TABLES:
+
+Tables used to display data in rows & columns format.
+Ex:	display all employee details in table format
+	Display all product details in table format
+
+The server given response displayed using table format
+
+eid	ename	salary	email
+111	sriram	10000	sriram@gmail.com
+112	Ramesh	15000	ramesh@gmail.com
+113	Lakshmi	20000	lakshmi@gmail.com
+
+Create table using tag < table >
+Create row using tag < tr >
+	
+First row of table is called heading using tag < th >
+<tr>
+	<th>eid</th>
+	<th>ename</th>
+	<th>salary</th>
+	<th>email</th>
+</tr>
+	
+Second row onwards data using tag < td >
+<tr>
+	<td>111</td>
+	<td>sriram</td>
+	<td>10000</td>
+	<td>sriram@gmail.com</td>
+</tr>
+
+To make the caption of table use the tag < caption >
+<caption>Employee Details</caption>
+
+Note: one employee data is one table row
+10 employee’s data means 10-rows
+
+< thead >	to defines the header section of table
+< tbody >	body section of table
+< tfoot >	footer/result section table
+
+Colspan:
+	To combine/merge the multiple columns to make it as single
+	Ex: - <td colspan=’3’>total salaries</td>
+Rowspan:
+	To combine/merge rows to make it as single
+	Ex: - <td rowspan=’2’>sriram</td>
+
+
+	
+
+		Table tag attributes:
+	
+1.border: specifies the border around the table.
+Ex: <table border= ‘2’>
+	
+2.width: specifies width of table
+Ex: <table width= ‘80%’>
+	
+3.height: specifies height of table
+Ex: <table height= ‘100%’>
+	
+4.cellpadding: distance between cell content & borders
+Ex: <table cellpadding= ‘5’>
+	
+5.cellspacing: space b/w cell to cell
+Ex: <table cellspacing= ‘10’>
+	
+6.align: Alignment of the table
+Ex: <table align= ‘center/left/right’>
+	
+7.bgcolor: background color of table
+Ex: <table bgcolor= ‘pink’>
+	
+8.background: background image of table
+Ex: <table background= ‘image.jpg’>
+	
+9.bordercolor: border color of the table
+Ex: <table bordercolor= ‘red’>
+	
+10.rules: specifies whether to show lines b/w cells
+Ex: <table rules= ‘all’>
+	
+			HTML Forms:
+
+Html forms are used to collect user input & send it to a server for processing
+Ex: 	login form
+	Registration form
+	Product details form etc…
+Form <form> tag used to create a form, it contains the 2 Attributes.
+	
+1.<form action= ‘url: loginform’>
+	Specifies the url to where the form data will be sent
+	Here the form data submitted to login servlet
+2.<form method= ‘get’>
+	The form is generating the get request
+	<form method= ‘post’>
+	The form is generating the post request
+
+<label> tag used to take the constant text
+Ex: <label> username: </label>
+
+The form data is submitted to 2-places
+	
+1.JavaScript
+	JavaScript reading the data using ‘id’ attribute 
+	javascript will perform the validations logic.
+2.server
+	Server reading the data using ‘name’ attribute 
+	server will main business logics.
+
+<form action='URL'method='Post/Get'enctype='text/plain'target='_blank'novalidate
+name='formname'autocomplete='on/off'></form>
+
+	action='where the form data should be sent after submission'
+	method='type of privacy'
+	GET: Sends data as URL parameters (visible in the URL).
+	POST: Sends data in the request body (more secure).
+	enctype='how the form data should be encoded when submit it to server'
+	target='specifies where to display the response after submit the form'
+		('_self','_blank','_parent' & '_top').
+	novalidate='indicates that form should not be validate before submit'		
+	name='specifies a name for the form'
+	autocomplete='Controls whether the browser should auto-fill form fields'
+
+
+
+
+
+
+
+
+the <input> tag used to enter user data
+
+<input type='text' id='usrname' name='usrname' value='raam' placeholder='sri'
+required readonly disabled min='5' maxlength='20' max='20' pattern='[A-Za-z] {5,}' autocomplete='on/off' step='5' multiple size='20'>
+
+	type='type of input field'
+	name='name of input, when submitting form data'
+	value='set the default value of input field'
+	placeholder='provides a short hint inside the input field about what to enter'
+	required='Ensures the field must be filled out before form submit'
+	readonly='makes the field non-editable'
+	disabled='disables the input field so it cannot be interacted with'
+	maxlength min='sets the maximum & minimum number of characters allowed'
+	pattern='sets a regular expression for input validation'
+	autocomplete='controls whether the browser should auto-fill the input field'
+	step='controls the allowed range and step increment for numbers'
+	multiple='allows multiple values to be selected or entered'
+	size='sets the visible width of input field in characters'
+
+
+
+Text-Based Inputs:
+<input type='text'		name='Single-line text input'>
+<input type='password'		name='masks/hide the characters'>
+<input type='email'		name='validates email addresses'>
+<input type='search'		name='Styled for search inputs'>
+<input type='tel'		name='for phone/mobile numbers'>
+<input type='url'		name='Validates URLs'>
+
+Numeric Inputs:
+<input type='number'		name='numeric input'>
+<input type='range'		name='slider for numeric i/p within a range'>
+
+Date and Time Inputs:
+<input type='date'		name='for selecting a date'>
+<input type='datetime-local'	name='selecting date and time (without timezone)'>
+<input type='month'		name='selecting a month and year'>
+<input type='week'		name='selecting a week of the year'>
+<input type='time'		name='selecting time'>
+
+
+Choices and Options:
+<input type='radio'		name='Single-choice option'>
+<!--input type="radio"	name="gender" value="male"--> Male
+<!--input type="radio"	name="gender" value="female"--> Female
+
+<input type='checkbox'		name='multiple-choice option'>
+<!--input type="checkbox" name="subscribe" checked-->
+Subscribe to newsletter
+<input type='color'		name='Color picker'>
+File and Media Inputs:
+<input type='file'		name='upload system files/documents'>
+
+Buttons and Actions:
+<input type='submit'		name='to send form data to server'>
+<input type='reset'		name='resets form to their default values '>
+<input type='button'		name='A button that perform an action'>
+<input type='image'		name='an image to act as a form submission button'>
+
+Hidden Inputs:
+<input type='hidden'		name='invisible input field/to store data that is not visible to user' value= ‘525’>
+
+Without showing value in browser view, just to send value to server when form is submitted.
+
+
+
+1.Take datalist & attach it to textbox
+
+	<label>Company name:</label>
+    	<input type="text" list="companies">
+   	<datalist id="companies">
+        	<option value="tcs"></option>
+      		<option value="wipro"></option>
+        	<option value="sathyatech"></option>
+        	<option value="ibm"></option>
+    	</datalist>
+
+
+
+2.Below code when we select Hyderabad then ‘hyderabad’ value send to server.
+
+    	<label for="">select city:</label>
+   	<select name="" id="">
+        	<option value="">hyderabad</option>
+        	<option value="">bangalore</option>
+        	<option value="">chennai</option>
+    	</select>
+
+3.Below code when we select Hyderabad the ‘hyd’ value send to server.
+
+    	<label for="">select city:</label>
+    	<select name="" id="">
+        	<option value="hyd">hyderabad</option>
+        	<option value="bngl">bangalore</option>
+        	<option value="chni">chennai</option>
+    	</select>
+
+
+
+
+4.Making multiple options as one group(<optgroup>)
+
+	<label for="cars">choose a car</label>
+    	<select name="" id="">
+		
+        <optgroup label="swedish cars xxxx">
+            	<option value="volvo">volvo</option>
+            	<option value="saab">saab</option>
+        </optgroup>
+
+        <optgroup label="German cars">
+            <option value="mercedes">mercedes</option>
+            <option value="audi">audi</option>
+        </optgroup>
+		
+    	</select>
+
+
+5.Create checkbox and make it required.
+	<form action="">
+        <input type="checkbox" id="t" name="t" required>
+        	Accept terms & conditions.
+        <input type="submit" value="submit">
+	</form>
+
+
+youtube videos & google maps
+	
+<iframe> tag used to take google maps & youtube videos.
+Click on share location copy the embed code url. (google maps)
+Right click on youtube video copy the <embed code>. (youtube videos)
+
+<audio> tag used to take audio files.
+<audio src="location" controls></audio>
+
+<video> tag used to take video files.
+<video src="location" height="100px"width="100px" controls></video>
+	
+<div> tag
+Div tag used to take divisions of web page.
+Web page contain multiple divisions
+Every division contains multiple tags.
+We can apply styles to entire division
+Even the main division can have sub divisions.
+
+Multiple divisions like these
+	<div class="box">
+        	<h1>heading</h1>
+        	<p>paragraph</p>
+    	</div>
+Main div can have sub divisions
+	<div class="container">
+       		<div>division-1</div>
+        	<div>division-2</div>
+    	</div>
+
+DOM (Document object Model)
+Html document tags/elements will be converted into tree of objects
+The root object of the DOM is document.
+DOM is created by the browser when a webpage is loaded.
+	
+To see the DOM online:
+http://oxedward.github.io/dom-visualizer/
+
+
+Social Media Icons:
+To get the icon support use the website
+http://fontawesome.com/
+open the website click on icons
+search icon
+click on icon you will get code.
+To get the support icons we need to place the fontawesomeCDN link in head tag
+
+
+<head>
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/
+	fontawesome/6.7.2/css/all.min.css'>
+</head>
+<body>  
+	<i class="fa-brands fa-whatsapp fa-3x" style='color: green'></i>
+	<i class="fa-brands fa-facebook fa-3x" style='color: blue'></i>
+	<i class="fa-brands fa-twitter fa-3x" style='color: skyblue'></i>
+</body>
+
+Create the frame, when we click on hyperlink the 
+website should be displayed on frame
+
+<iframe height='500' width='800' name='myframe' title='iframee' frameborder='2'></iframe>
+        <a href='https://sathyatech.com/' alt='not found' target='myframe'>sathyatech</a>
+        <a href='https://vijetha.in/' alt='not found' target='myframe'>vijetha Super market</a>
+        <a href='https://www.dmart.in/' alt='not found' target='myframe'>DMART</a>
+
+
+
+
+
+Semantic Elements:
+The page contains 5-parts
+1.header		<header>
+2.footer		<footer>
+3.left side links	<aside>
+4.right side links	<aside>
+5.main content	<main>
+
+Note: Semantic elements provide meaning to the structure of a webpage, making it easier for browsers and search engines to understand the content.
+
+1. <header>
+	Semantic element represents the header of the webpage
+	It contains
+	
+	heading of page <h1>
+	Logo <img>
+	Navigation <nav>
+
+2. <footer>
+	Represents the footer of webpage.
+	It contains
+	
+	Copyright information
+	Social media icons
+	Websites, emails…etc
+
+3. <aside>
+	Used to represent sidebar links
+	This can be taken left & right side of the content
+
+4. <main>
+	Represent main content of webpage
+	We can write separate <article> elements directly on a page
+	We can group multiple <article> elements within a <section> tag.
+
+
+
+
+
+
+
+
+
+
+<html></html>			HTML root tag
+<head></head>			Head tag
+<title></title>			Title tag
+<body></body>			Body tag
+<h1><h2>..<h6>			Heading tags
 <hr>				Horizental line tag
-<p>	</p>			Paragraph tag
+<p></p>				Paragraph tag
 <pre></pre>			Paragraph tag as it is
 <b> </b>			Bold tag
 <i> </i>			Italic tag
 <q> </q>			Quotation tag
 <u> </u>			Underline tag
 <br>				Break tag
-<small></small>		Small tag
+<small></small>			Small tag
 <del></del>			Delete tag
-<mark></mark>		Mark tag
-<strong></strong>	Strong tag
+<mark></mark>			Mark tag
+<strong></strong>		Strong tag
 <sup></sup>			super tag
 <sub></sub>			sub tag
-<ol><li></li></ol>	ordered list tag
-<ul><li></li></ul>	un-ordered list tag
-<dl><dt></dt><dd></dd></dl>	Definition list 
+<ol><li></li></ol>		ordered list tag
+<ul><li></li></ul>		un-ordered list tag
+<dl><dt></dt><dd></dd></dl>	Definition list
 &copy;				Entity with name
 &#1938;				Entity with code
-<label></label>		Label tag	 
+<label></label>			Label tag
 
 
+<textarea>
+Used for multi-line text input(like a comment box).
+<textarea name="message" rows="4" cols="50" placeholder="Enter your message here..."></textarea>
 
-
-
-
-
-
-
-	<a href='url'target='_blank'rel='relation'title='title'type='filetype'accesskey='e'
-		href(Hyperlink Reference):specifies the URL/path to navigate to.
-		target='defines where to open the linked document.'
-			some targets:'_self'=Opens in the same tab.
-					'_blank'=Opens in a new tab.
-					'_parent'=Opens in the parent framee.
-					'_top'=Opens in the full body of the window.
-		rel='the relationship b/w the current and linked document.'
-		title='Provides additional information about the link as a tooltip.'
-		type='specifies the type of the linked resource(less used).'
-		accesskey='provides a shortcut key to focus/activate the link.' >name of link</a>
-
-
-
-
-
-	<img src='D:\folder\image.jpg'alt='not found'width='100'height='100'title='image'
-		src='location of the image'(Source).
-		alt='provides text for image if it cannot be displayed'(Alternative Msg).
-		width='width of the image'
-		height='height of the image'
-		title='provides additional information about the image,displayed as tooltip'>
-		
-
-
-
-
-
-
-
-
-	<form action='URL'method='Post/Get'enctype='text/plain'target='_blank'novalidate 
-	name='formname'autocomplete='on/off'
-		action='where the form data should be sent after submission'
-		method='type of privacy'
-			GET:Sends data as URL parameters(visible in the URL).
-			POST:Sends data in the request body(more secure).
-		enctype='how the form data should be encoded when submit it to server'
-		target='specifies where to display the response after submit the form'
-			('_self','_blank','_parent' & '_top').
-		novalidate='indicates that form should not be validate before submit'
-		name='specifies a name for the form'
-		autocomplete='Controls whether the browser should auto-fill form fields'
-	></form>
-		
-		
-		
-
-
-
-
-	<input type='text'id='usrname'name='usrname'value='raam'placeholder='sri'required readonly disabled min='5'maxlength='20' max='20'pattern='[A-Za-z]{5,}'autocomplete='on/off'step='5'multiple size='20'
-		type='type of input field'
-		name='name of input,when submitting form data'
-		value='set the default value of input field'
-		placeholder='provides a short hint inside the input field about what to enter'
-		required='Ensures the field must be filled out before form submit'
-		readonly='makes the field non-editable'
-		disabled='disables the input field so it cannot be interacted with'
-		maxlength min='sets the maximum & minimum number of characters allowed'
-		pattern='sets a regular expression for input validation'
-		autocomplete='controls whether the browser should auto-fill the input field'
-		step='controls the allowed range and step increment for numbers'
-		multiple='allows multiple values to be selected or entered'
-		size='sets the visible width of input field in characters'>
-
-
-
-
+<select>
+Provides a dropdown menu for selecting an option.can contain multiple<option> elements
 	
+<select name="country">
+	<option value="i">India</option>
+	<option value="a">America</option>
+</select>
 
-	Text-Based Inputs:
-		<input type='text'		name='Single-line text input'>
-		<input type='password'	name='masks/hide the characters'>
-		<input type='email'		name='validates email addresses'>
-		<input type='search'	name='Styled for search inputs'>
-		<input type='tel'		name='for phone/mobile numbers'>
-		<input type='url'		name='Validates URLs'>
-
-	Numeric Inputs:
-		<input type='number'	name='numeric input'>
-		<input type='range'		name='slider for numeric i/p within a range'>
-
-	Date and Time Inputs:
-		<input type='date'				name='for selecting a date'>
-		<input type='datetime-local'	name='selecting date and time(without timezone)'>
-		<input type='month'				name='selecting a month and year'>
-		<input type='week'				name='selcting a week of the year'>
-		<input type='time'				name='selecting time'>
+<button>
+It can trigger actions often used for form submission or to execute JavaScript.
 	
-	Choices and Options:
-		<input type='radio'		name='Single-choice option'>
-				<!--input type="radio"	name="gender" value="male"--> Male  
-				<!--input type="radio"	name="gender" value="female"--> Female
-		<input type='checkbox'	name='multiple-choice option'>
-				<!--input type="checkbox" name="subscribe" checked--> Subscribe to newsletter
-		<input type='color'		name='Color picker'>
+<button type="submit">Submit</button>
+
+<label>
+Defines labels for <input>,<textarea>,<select>,and other form elements.helps understanding give i/p.
+	
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+
+<output>
+Displays the result of a calculation/user input (for JavaScript to show o/p of dynamic changes).
+<output name="result" for="a b">0</output>
 
 
 
-	File and Media Inputs:
-		<input type='file'		name='upload system files/documents'>
-			
-	Buttons and Actions:
-		<input type='submit'	name='to send form data to server'>
-		<input type='reset'		name='resets the form to their default values '>
-		<input type='button'	name='A button that perform an action'>
-		<input type='image'		name='an image to act as a form submission button'>
+<datalist>
+Provides a list of predefined options for an <input>element.it offers suggestion while
+user types in the input field.
+	
+<input list="browsers" name="browser" id="browser">
+<datalist id="browsers">
+	<option value="Chrome">
+	<option value="Firefox">
+	<option value="Safari">
+</datalist>
 
-	Hidden Inputs:
-		<input type='hidden'	name='invisible input field/to store data that is not visible to user'>
-
-
-
-	<textarea>
-	Used for multi-line text input(like a comment box).
-	<textarea name="message" rows="4" cols="50" placeholder="Enter your message here..."></textarea>
-
-	<select>
-	Provides a dropdown menu for selecting an option.can contain multiple<option> elements
-		<select name="country">
-			<option value="i">India</option>
-			<option value="a">America</option>
-		</select>
-
-	<button>
-	It can trigger actions often used for form submission or to execute JavaScript.
-		<button type="submit">Submit</button>
-
-	<label>
-	Defines labels for <input>,<textarea>,<select>,and other form elements.helps understanding give i/p.
-		<label for="username">Username:</label>
-		<input type="text" id="username" name="username">
-
-	<output>
-	Displays the result of a calculation/user input (for JavaScript to show o/p of dynamic changes).
-		<output name="result" for="a b">0</output>
-
-
-
-	<datalist>
-	Provides a list of predefined options for an <input>element.it offers suggestion while 
-	user types in the input field.
-			<input list="browsers" name="browser" id="browser">
-			<datalist id="browsers">
-				<option value="Chrome">
-				<option value="Firefox">
-				<option value="Safari">
-			</datalist>
-
-	<fieldset>and<legend>
-	Used to group related elements in a form,usually for better visual structure.
-	<legend> Provides a title for the group of elements.
-			<fieldset>
-				<legend>Personal Information</legend>
-				<input type="text" name="first-name" placeholder="First Name">
-				<input type="text" name="last-name" placeholder="Last Name">
-			</fieldset>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<fieldset>and<legend>
+Used to group related elements in a form,usually for better visual structure.
+<legend> Provides a title for the group of elements.
+	
+<fieldset>
+	<legend>Personal Information</legend>
+	<input type="text" name="first-name" placeholder="First Name">
+	<input type="text" name="last-name" placeholder="Last Name">
+</fieldset>

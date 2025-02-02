@@ -131,9 +131,380 @@ public class Notes {
 		}
 
 		//Q. print Alphabets upperCase A-Z ?
-		
-		
+		System.out.println("Alphabets : ");
+		for(char ch='A' ; ch<='Z' ; ch++)
+		{
+			System.out.println(ch);
+		}
 
+		//Q. print multiplication tables ?
+		int n=?;
+		for(int i=1 ; i<=10 ; i++)
+		{
+			System.out.println(n+" * "+i+" = "+(n*i));
+		}
+
+		//Q. find sum of first n numbers ?
+		int n? , sum=0;
+		for(int i=1 ; i<=n ; i++)
+		{
+			sum=sum+i;
+		}
+		System.out.println(sum);
+
+		//Q. find factorial of given number ?
+		int n=? , fact=1;
+		for(int i=1 ; i<=n ; i++)
+		{
+			fact=fact*i;
+		}
+		System.out.println(fact);
+
+		// form 1-10
+		// print Evens
+		for(int i=1 ; i<=10 ; i++)
+		{
+			if(i%2==0)
+			{
+				System.out.println(i);
+			}
+		}
+		
+		// count evens
+		int count=0;
+		for(int i=1 ; i<=10 ; i++)
+		{
+			if(i%2==0)
+			{
+				count++;
+			}
+		}
+		System.out.println(count);
+		
+		// sum of evens
+		int sum=0;
+		for(int i=1 ; i<=10 ; i++)
+		{
+			if(i%2==0)
+			{
+				sum=sum+i;
+			}
+		}
+		System.out.println(sum);
+
+		//Q. factors of given number ?
+		int n=?;
+		for(int i=1 ; i<=n ; i++)
+		{
+			if(n%i==0)
+			{
+				System.out.println(i+"is a factor");
+			}
+		}
+
+		//Q. count factors of given number ?
+		int n=?, count=0;
+		for(int i=1 ; i<=n ; i++)
+		{
+			if(n%i==0)
+			{
+				count++;
+			}
+		}
+		System.out.println(count);
+
+		//Q. sum of factors of given number ?
+		int n=?, sum=0;
+		for(int i=1 ; i<=n ; i++)
+		{
+			if(n%i==0)
+			{
+				sum=sum+i;
+			}
+		}
+		System.out.println(sum);
+
+		//	primeNumber
+		//the number which is having only 2 factors 
+		int n=? , count=0;
+		for(int i=1 ; i<=n ; i++)
+		{
+			if(n%i==0)
+			{
+				count++;
+			}
+		}
+		if(count==2)
+		{
+			System.out.println("prime");
+		}
+		else
+		{
+			System.out.println("Not prime");
+		}
+
+		//	perfect number
+		//sum of factors except itself is equal to same number
+		int n=? , sum=0;
+		for(int i=1 ; i<n ; i++)
+		{
+			if(n%i==0)
+			{
+				sum=sum+i;
+			}
+		}
+		if(sum==n)
+		{
+			System.out.println("perfect");
+		}
+		else
+		{
+			System.out.println("Not perfect");
+		}
+
+		//Q. even numbers from 1-10 ?
+		for(int n=1 ; n<=10 ; n++)
+		{
+			if(i%2==0)
+			{
+				System.out.println(n);
+			}
+		}
+
+		//Q. print tables from 5 to 15 ?
+		for(int n=5 ; n<=15 ; n++)
+		{
+			for(int i=5 ; i<=10 ; i++)
+			{
+				System.out.println(n+" * "+i+" = "+(n*i));
+			}	
+		}
+
+		//Q. print factorials from 2 to 8 ?
+		for(int n=2 ; n<=8 ; n++)
+		{
+			int fact=1;
+			for(int i=1 ; i<=n ; i++)
+			{
+				fact=fact*i;
+			}
+			System.out.println(fact);
+		}
+
+		//Q. print prime numbers from 1 to 100 ?
+		for(int n=1 ; n<=100 ; n++)
+		{
+			int count=0;
+			for(int i=1 ; i<=n ; i++)
+			{
+				if(n%i==0)
+				{
+					count++;
+				}
+			}
+			if(count==2)
+			{
+				System.out.println(n);
+			}
+		}
+
+		//Q. print perfect numbers from 1 to 10000 ?
+		for(int n=1 ; n<=10000 ; n++)
+		{
+			int sum=0;
+			for(int i=1 ; i<n ; i++)
+			{
+				if(n%i==0)
+				{
+					sum=sum+i;
+				}
+			}
+			if(sum==n)
+			{
+				System.out.println(n);
+			}
+		}
+
+		//Scanner Class
+		/*
+		=> Scanner class is used to read input values from user.
+  		=> belongs to " java.util " package.
+    		=> we must create object of scanner class to access the methods 
+      		which are used to read input values.
+			Scanner sc = new Scanner(System.in);
+   		=> scanner class provides different methods to read different types
+     		of input values.
+       		Read String :- string s = sc.next();
+	 	Read Integer :- int x = sc.nextInt();
+   		Read Double :- double y = sc.nextDouble();
+     		Read Boolean :- boolean b = sc.nextBoolean();
+       		Read Character :- character ch = sc.next().charAt(0);
+       		
+		*/
+
+		//Q. Read & print your name ?
+		import java.util.Scanner;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your name : ");
+		string name = sc.next();
+		System.out.println("welcome "+name);
+
+		//Q. Read 2 nums and print addtion of them ?
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter first num : ");
+		int a = sc.nextInt();
+		System.out.println("Enter second num : ");
+		int b = sc.nextInt();
+		int c = a+b ;		
+		System.out.println("sum = "+c);
+
+		//Q. Read Character & check alphabet or not ?
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Character : ");
+		char ch = sc.next().charAt(0);
+		if((ch>='A' && ch<='Z') || (ch>='a' && ch<='z'))
+		{
+			System.out.println("Aplhabet");
+		}
+		else
+		{
+			System.out.println("Not Aplhabet");
+		}
+
+		//Q. Read emp Details (id, name, salary) & print them ?
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Emp Details(id, name, salary) : ");
+		int id = sc.nextInt();
+		string name = sc.next();
+		double salary = sc.nextDouble();
+		System.out.println("Details : "+id+", "+name+", "+salary);
+
+		//Q. Read number & Check even or not until user stops ?
+		Scanner sc = new Scanner(System.in);
+		while(true)
+			{
+				System.out.println("Enter number : ");
+				int n = sc.nextInt();
+				if(n%2==0)
+				{
+					System.out.println("Even");
+				}
+				else
+				{
+					System.out.println("Odd");
+				}
+				System.out.println("Do you want to stop (y/n) : ");
+				char ch = sc.next().charAt(0);
+				if(ch=='y' || ch=='Y')
+				{
+					break;
+				}
+			}
+
+		//Q. Read num & print table until user continue ?
+		Scanner sc = new Scanner(System.in);
+		while(true)
+			{
+				System.out.println("Enter number : ");
+				int n = sc.nextInt();
+				for(int i=1 ; i<=10 ; i++)
+					{
+						System.out.println(n+" * "+i+" = "+(n*i));
+					}
+				System.out.println("Do you want to continue (y/n) : ");
+				char ch = sc.next().charAt(0);
+				if(ch=='n' || ch=='N')
+				{
+					break;
+				}
+			}
+
+
+		//Q. Menu Driven program of Arthe
+		Scanner sc = new Scanner(System.in);
+		while(true)
+		{
+			
+			System.out.println("1. Add 2 nums");
+			System.out.println("2. Symbol or Not");
+			System.out.println("3. Big of 3 Nums");
+			System.out.println("4. Display Table");
+			System.out.println("5. Perfect Number");
+			System.out.println("6. Exit");
+			
+			System.out.println("Enter your choice : ");
+			int choice=sc.nextInt();
+			
+			if(choice==1)
+			{
+				System.out.println("Enter 2 nums :");
+				int a=sc.nextInt();
+				int b=sc.nextInt();
+				System.out.println("sum = "+(a+b));
+			}
+			else if(choice==2)
+			{
+				System.out.println("Enter Character :");
+				char ch=sc.next().charAt(0);
+				if(!((ch>='A' && ch<='Z') || (ch>='a' && ch<='z') || (ch>='0' && ch<='9')))
+				{
+					System.out.println(ch+" is a symbol");
+				}
+				else
+					System.out.println(ch+" Not a symbol");
+			}
+			else if(choice==3)
+			{
+				System.out.println("Enter 3 nums :");
+				int a=sc.nextInt();
+				int b=sc.nextInt();
+				int c=sc.nextInt();
+				
+				if(a>b && a>c)
+					System.out.println(a+" is big");
+				else if(b>c)
+					System.out.println(b+" is big");
+				else
+					System.out.println(c+" is big");
+			}
+			else if(choice==4)
+			{
+				System.out.println("Enter num :");
+				int a=sc.nextInt();
+				for(int i=1;i<=10;i++)
+				{
+					System.out.println(a+" * "+i+" = "+(a*i));
+				}
+			}
+			else if(choice==5)
+			{
+				System.out.println("Enter num :");
+				int a=sc.nextInt();
+				int sum=0;
+				for(int i=1;i<a;i++)
+				{
+					if(a%i==0)
+						sum+=i;
+				}
+				if(sum==a)
+					System.out.println("Perfect Number");
+				else
+					System.out.println("Not a Perfect Number");
+			}
+			else if(choice==6)
+			{
+				System.out.println("your session Exited");
+				break;
+			}
+			else
+				System.out.println("invalid choice");
+		}
+		
+		
+		
+		
+		
 	}
 
 }

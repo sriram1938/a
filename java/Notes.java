@@ -501,7 +501,166 @@ public class Notes {
 				System.out.println("invalid choice");
 		}
 		
-		
+
+				//Digit Based 
+		//Q. To count digits in given number ?
+		int n=?;
+		int count=0;
+		while(n!=0)
+		{
+			n=n/10;
+			count++;
+		}
+		System.out.println(count);
+
+		//Q. To find the sum of digits ?
+		int n=?;
+		int sum=0;
+		while(n!=0)
+		{
+			int d=n%10;
+			sum=sum+d;
+			n=n/10;
+		}
+		System.out.println(sum);
+
+		//Q. print even digits of given number ?
+		int n=?;
+		while(n!=0)
+		{
+			int d=n%10;
+			if(d%2==0)
+			{
+				System.out.println(d);
+			}
+			n=n/10;
+		}
+
+		//Q. count of even digits of given num ?
+		int n=?;
+		int count=0;
+		while(n!=0)
+		{
+			int d=n%10;
+			if(d%2==0);
+			{
+				count++;
+			}
+			n=n/10;
+		}
+		System.out.println(count);
+
+		//Q. sum of even digits of given number ?
+		int n=?;
+		int sum=0;
+		while(n!=0)
+		{
+			int d=n%10;
+			if(d%2==0)
+			{
+				sum=sum+d;
+			}
+			n=n/10;
+		}
+		System.out.println(sum);
+
+		//  STRUCTURE FOR DIGIT BASED PROGRAMS
+		int n=?;
+		while(n!=0)
+		{
+			int d=n%10;
+			{
+
+
+
+			}
+			n=n/10;
+		}
+
+		//Q. find the factorial for every digit ?
+		int n=?;
+		int fact=1;
+		while(n!=0)
+		{
+			int d=n%10;
+			for(int i=1 ; i<=d ; i++)
+			{
+				if(d%i==0)
+				{
+					fact=fact*i;
+				}
+			}
+			System.out.println(fact);
+			n=n/10;
+		}
+
+		//Q. Display reverse number ?
+		int n=?;
+		int rev=0;
+		while(n!=0)
+		{
+			rev=rev*10+n%10;
+			n=n/10;
+		}
+		System.out.println(rev);
+
+		//Q. palindrome number ?
+		//if given number is same as its reverse 
+		int n=?,rev=0,temp=n;
+		while(n!=0)
+		{
+			rev=rev*10+n%10;
+			n=n/10;
+		}
+		if(rev==temp)
+		{
+			System.out.println("Palindrome");
+		}
+		else
+		{
+			System.out.println("Not Palindrome");
+		}
+
+		//Q. Strong number
+		//sum of factorials of individual digits of given number is equals to same number
+		int n=?,sum=0,fact=1,temp=n;
+		while(n!=0)
+		{
+			int d=n%10;
+			for(int i=1 ; i<=d ; i++)
+			{
+				fact=fact*i;
+			}
+			sum=sum+fact;
+			n=n/10;
+		}
+		if(temp==sum)
+		{
+			System.out.println("Strong Number");
+		}
+		else
+		{
+			System.out.println("Not");
+		}
+
+		//Q. To display first digit in given number ?
+		int n=?;
+		while(n>=10)
+		{
+			n=n/10;
+		}
+		System.out.println(n);
+
+		//Q. find the power value of given number ?
+		int n=?,p=?,res=1;
+		for(int i=1 ; i<=p ; i++)
+		{
+			res=res*n;
+		}
+		System.out.println(res);
+			
+				
+			
 		
 		
 		

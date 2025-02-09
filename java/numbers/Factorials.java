@@ -11,23 +11,4 @@ public class Factorials
 		}
 		System.out.println(fact);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	public static void oneToN()
-	{
-		
-	}
 }

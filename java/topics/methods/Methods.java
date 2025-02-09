@@ -13,7 +13,7 @@ package methods;
  	
  	note: 	only main method execute automatically
  		all other methods must be execute manually
- 			
+ ----------------------------------------------------------------		
  	public class Methods 
 	{
 		public static void main(String[] args) 
@@ -32,7 +32,7 @@ package methods;
 			System.out.println("abc...");
 		}
 	}
- 	
+ ----------------------------------------------------------------
  			naming rules
     			------------
  	class: Every word starts with Capital letter
@@ -44,11 +44,10 @@ package methods;
  	-------		main()
  			getName()
  			getAccountNumber()
- 			
- 			
+ 				
  => one program can have any number of Classes
  => one Class can have any number of methods
- 
+ ----------------------------------------------------------------
  	public class Code
  	{
  		public static void main(String[] args) 
@@ -71,9 +70,9 @@ package methods;
 			System.out.println("Hello EveryOne");
 		}
 	}
-	
+ ----------------------------------------------------------------
 			** Method with Arguments **
-	
+   			===========================
 	public class Code
  	{
  		public static void main(String[] args) 
@@ -89,7 +88,7 @@ package methods;
 			System.out.println("sum = "+(a+b));
 		}
 	}
-		
+ ----------------------------------------------------------------	
  Q. Different type arguments
  
  A. public class Code
@@ -106,7 +105,7 @@ package methods;
 			System.out.println(id+","+name+","+salary);
 		}
 	}
- 		
+ ----------------------------------------------------------------		
  Q. Read age & call with that
  
  A. import java.util.Scanner;
@@ -130,7 +129,7 @@ package methods;
 				System.out.println("can not vote");
 		}
 	}
- 
+ ----------------------------------------------------------------
  Q. Method with Arguments & return values
  
  A. public class Code
@@ -150,7 +149,7 @@ package methods;
 			return c;
 		}
 	}
- 
+ ----------------------------------------------------------------
  Q. even or odd
  
  A. public class Code
@@ -171,7 +170,7 @@ package methods;
 				return "Not Even num";
 		}
 	}
-	
+ ----------------------------------------------------------------	
  Q. Method without Arguments & with return values
  
  A. public class Code
@@ -189,7 +188,7 @@ package methods;
 			return 3.146;
 		}
 	}
-	
+ ----------------------------------------------------------------	
 	
 		*** Classification ***
   		======================
@@ -206,7 +205,7 @@ package methods;
 	No arguments & with return values
 		double getPI()
  
- 
+ ----------------------------------------------------------------
  Q. Passing Array as input to method
  A. public class Code
  	{
@@ -224,7 +223,7 @@ package methods;
 				System.out.println(ele);
 		}
 	}
- 
+ ----------------------------------------------------------------
  Q. method is returning Array
  A. public class Code
  	{
@@ -243,7 +242,7 @@ package methods;
 			return arr;
 		}
 	}
-
+ ----------------------------------------------------------------
 
  	Instance method :
   	=================
@@ -255,7 +254,7 @@ package methods;
  		public static void main(String[] args) 
 		{
 			Say.hi();
-			Say s = new Say();		//object creation
+			Say s = new Say();	//object creation
 			s.hello();
 		}
 	}
@@ -270,14 +269,14 @@ package methods;
 			System.out.println("Hello all");
 		}
 	}
- 	
- 	=> we can call any number of methods with single instance(object)
+ ----------------------------------------------------------------	
+ => we can call any number of methods with single instance(object)
  	
  	public class Code
  	{
  		public static void main(String[] args) 
 		{
-			Calc c = new Calc();		//object creation
+			Calc c = new Calc();	//object creation
 			c.sum(5,7);
 			c.product(5,7);
 		}
@@ -293,7 +292,7 @@ package methods;
 			System.out.println("product = "+(a*b));
 		}
 	}
-
+ ----------------------------------------------------------------
 */
 
 
@@ -303,7 +302,7 @@ public class Methods
 	public static void main(String[] args) 
 	{
 		System.out.println("main...");
-		Test.abc();		//calling
+		Test.abc();	//calling
 		Test.abc();
 
 	}

@@ -2,15 +2,17 @@ package methods;
 
 /*
 			*** METHODS ***
+   			---------------
  => method is block of instructions that performs a task.
  => program execution automatically starts with main method.
  
  	Static method :
+  	===============
  	=> defining a method using static keyword.
  	=> we can access the static methods using class name
  	
- 	note: only main method execute automatically
- 			all other methods must be execute manually
+ 	note: 	only main method execute automatically
+ 		all other methods must be execute manually
  			
  	public class Methods 
 	{
@@ -32,13 +34,14 @@ package methods;
 	}
  	
  			naming rules
+    			------------
  	class: Every word starts with Capital letter
- 			String
+ 	------		String
  			AccountHolder
  			FileNotFoundException
  			
  	method: Camel Case
- 			main()
+ 	-------		main()
  			getName()
  			getAccountNumber()
  			
@@ -189,6 +192,7 @@ package methods;
 	
 	
 		*** Classification ***
+  		======================
 	
 	No arguments & No return values
 		void hello()
@@ -242,6 +246,7 @@ package methods;
 
 
  	Instance method :
+  	=================
  	=> defining a method without static keyword.
  	=> we can access the method using object.
  	

@@ -1,7 +1,7 @@
 package SetterGetter;
 /*
-				*** Setter Getter ***
-				=====================
+			*** Setter Getter ***
+			=====================
  ----------------------------------------------------------------
 	static variable: Access using class-name
 	instance variable: Access using object-Address(this)

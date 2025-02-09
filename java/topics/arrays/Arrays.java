@@ -2,6 +2,8 @@ package arrays;
 
 /*
  		*** ARRAY ***
+   		=============
+----------------------------------------------------------------
  => Primitive variables store only one value at a time.
  => Array variables can be used to store multiple values but 
   	same data types.
@@ -13,7 +15,7 @@ package arrays;
  	arr.length : 5;
  	first ele : arr[0];
  	last ele : arr[arr.length-1];
- 		
+----------------------------------------------------------------		
  Q. Display length, first, & last element in Array ?
  A. public class Code
     {
@@ -26,8 +28,8 @@ package arrays;
 		 System.out.println("Last ele : "+arr[n-1]);
 	 	}
  	}
- 		
- Q.	Sum of first & last ele in Array ?
+---------------------------------------------------------------- 		
+ Q. Sum of first & last ele in Array ?
  A.	public class Code
  	{
  		public static void main(String[] args)
@@ -36,8 +38,8 @@ package arrays;
  			System.out.println(arr[0]+arr[arr.length-1]);
  		}
  	}
- 	
- Q.	Check first ele is Even or Not ?
+---------------------------------------------------------------- 	
+ Q. Check first ele is Even or Not ?
  A.	public class Code
  	{
  		public static void main(String[] args)
@@ -49,60 +51,62 @@ package arrays;
  				System.out.println("Not even");
  		}
  	}
- 	
- Q.	Display Array elements using for loop ?
- A. for(int i=0;i<=arr.length-1;i++)
+---------------------------------------------------------------- 	
+ Q. Display Array elements using for loop ?
+ A. 	for(int i=0;i<=arr.length-1;i++)
  	{
  		System.out.println(arr[i]);
  	}
- 	
- Q.	Display in reverse order ?
+---------------------------------------------------------------- 	
+ Q. Display in reverse order ?
  A.	for(int i=arr.length-1;i>=0;i--)
  	{
  		System.out.println(arr[i]);
  	}
  	
- 	
+---------------------------------------------------------------- 
+
 			*** for-each ***
-		
+   			================
+----------------------------------------------------------------
  => it is called enhanced for loop
- =>	using it, we can easily process elements of array
+ => using it, we can easily process elements of array
  => limitations is for each loop can process elements
   	in forward direction only
  => for(int x : arr)
  	{
  		System.out.println(x);
  	}
- 	note: if process all ele in array then take for each
- 			otherwise take for loop
- 			
- Q.	Sum of all elements in array ?
- A. int[] arr = {3,7,4,5,8,6};
+  note: if process all ele in array then take for each
+ 	otherwise take for loop
+----------------------------------------------------------------		
+ Q. Sum of all elements in array ?
+ A. 	int[] arr = {3,7,4,5,8,6};
  	int sum=o;
  	for(int x : arr)
  	{
  		sum=sum+x;
  	}
  	System.out.println(x);
- 	
+---------------------------------------------------------------- 	
  Q. Count even elements in array ?
- A. int count=0;
+ A. 	int count=0;
  	for(int x : arr)
  	{
  		if(x%2==0)
  			count++;
  	}
  	System.out.println(x);
- 	
- Q.	Display even elements in reverse order ?
- A. for(int i=arr.length-1;i>=0;i++)
+---------------------------------------------------------------- 	
+ Q. Display even elements in reverse order ?
+ A. 	for(int i=arr.length-1;i>=0;i++)
  	{
  		if(arr[i]%2==0)
  			System.out.println(arr[i]);
  	}
- 	
+---------------------------------------------------------------- 	
  Q. Display first even number & last odd number with their index value
- A. for(int i=0;i<=arr.length-1;i++)
+ A. 	for(int i=0;i<=arr.length-1;i++)
  	{
  		if(arr[i]%2==0)
  		{
@@ -121,17 +125,17 @@ package arrays;
  			break;
  		}
  	}
- 	
+---------------------------------------------------------------- 	
  Q. Display large element in array ?
- A. int large = arr[0];
+ A. 	int large = arr[0];
  	for(int i=1;i<=arr.length-1;i++)
  	{
  		if(arr[i]>large)
  			large=arr[i];
  	}
- 	
+---------------------------------------------------------------- 	
  Q. Display largest element along with location ?
- A. int large = arr[0],loc=0;
+ A. 	int large = arr[0],loc=0;
  	for(int i=1;i<=arr.length-1;i++)
  	{
  		if(arr[i]>large)
@@ -140,7 +144,7 @@ package arrays;
  			loc = i;
  		}
  	}
- 	
+---------------------------------------------------------------- 	
  Q. swap first & second elements of array ?
  A.	int[] arr = {3,7,4,5,8,6};
  	int temp = arr[0];
@@ -152,7 +156,7 @@ package arrays;
  	{
  		System.out.print(ele+" ");
  	}
- 	
+---------------------------------------------------------------- 	
  Q. swap first & last ?
  A. int[] arr = {3,7,4,5,8,6};
  	int temp = arr[0];
@@ -164,7 +168,7 @@ package arrays;
  	{
  		System.out.print(ele+" ");
  	}
- 	
+---------------------------------------------------------------- 	
  Q. swap index ele with its adjacent ele only if index is valid ?
  A. int index = ?;
  	if(index>=0 && index<=arr.length-2)
@@ -177,7 +181,7 @@ package arrays;
  	{
  		System.out.print("Invalid given");
  	}
- 	
+---------------------------------------------------------------- 	
  Q. swap specified locations elements ?
  A. int x=?,y=?;
  	if((x>=0 && x<=arr.length-1)&&(y>=0 && y<=arr.length-1)&&(x!=y))
@@ -186,7 +190,7 @@ package arrays;
  		arr[x] = arr[y];
  		arr[y] = temp;
  	}
- 	
+---------------------------------------------------------------- 	
  Q. swap first even & last odd ?
  A. int x=-1,y=-1;
  	for(int i=0;i<=arr.length-1;i++)
@@ -214,7 +218,7 @@ package arrays;
  	{
  		System.out.print(z+" ");
  	}
- 	
+---------------------------------------------------------------- 	
  Q. swap small & large elements ?
  A. int large = arr[0],l=0;
  	for(int i=1;i<=arr.length-1;i++)
@@ -239,18 +243,8 @@ package arrays;
  	int temp = arr[l];
  	arr[l] = arr[s];
  	arr[s] = temp;
- 	
- 			
-
-
-
-
-
-
-
-
-
-
+ 	 			
+----------------------------------------------------------------
 */
 public class Arrays 
 {

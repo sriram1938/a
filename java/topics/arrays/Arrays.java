@@ -1,29 +1,29 @@
 package arrays;
 
 /*
- 					*** ARRAY ***
+ 		*** ARRAY ***
  => Primitive variables store only one value at a time.
  => Array variables can be used to store multiple values but 
   	same data types.
  => we can access array elements using their index values.
  => indexing starts with '0' to 'arr.length-1'
  
- 		int[] arr = {3,7,4,2,5};
+ 	int[] arr = {3,7,4,2,5};
  		
- 		arr.length : 5;
- 		first ele : arr[0];
- 		last ele : arr[arr.length-1];
+ 	arr.length : 5;
+ 	first ele : arr[0];
+ 	last ele : arr[arr.length-1];
  		
- Q.	Display length, first, & last element in Array ?
- A.	public class Code
+ Q. Display length, first, & last element in Array ?
+ A. public class Code
+    {
+ 	public static void main(String[] args)
  	{
- 		public static void main(String[] args)
- 		{
-	 		int[] arr = {3,7,4,5,8,6};
-	 		int n = arr.length;
-	 		System.out.println("length : "+n);
-	 		System.out.println("First ele : "+arr[0]);
-	 		System.out.println("Last ele : "+arr[n-1]);
+	 	int[] arr = {3,7,4,5,8,6};
+		 int n = arr.length;
+		 System.out.println("length : "+n);
+		 System.out.println("First ele : "+arr[0]);
+		 System.out.println("Last ele : "+arr[n-1]);
 	 	}
  	}
  		

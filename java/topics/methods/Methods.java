@@ -1,8 +1,8 @@
 package methods;
 
 /*
-			*** METHODS ***
-   			---------------
+		*** METHODS ***
+   		---------------
  => method is block of instructions that performs a task.
  => program execution automatically starts with main method.
  
@@ -33,8 +33,8 @@ package methods;
 		}
 	}
  ----------------------------------------------------------------
- 			naming rules
-    			------------
+ 		naming rules
+    		------------
  	class: Every word starts with Capital letter
  	------		String
  			AccountHolder
@@ -71,8 +71,8 @@ package methods;
 		}
 	}
  ----------------------------------------------------------------
-			** Method with Arguments **
-   			===========================
+		** Method with Arguments **
+   		===========================
 	public class Code
  	{
  		public static void main(String[] args) 

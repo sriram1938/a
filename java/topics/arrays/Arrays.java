@@ -66,8 +66,8 @@ package arrays;
  	
 ---------------------------------------------------------------- 
 
-			*** for-each ***
-   			================
+		*** for-each ***
+   		================
 ----------------------------------------------------------------
  => it is called enhanced for loop
  => using it, we can easily process elements of array

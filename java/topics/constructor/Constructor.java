@@ -1,7 +1,7 @@
 package constructor;
 /*
-					*** Constructor ***
-					===================
+		*** Constructor ***
+		===================
 			
  => defining a method using class name
  => return type is not allowed for the constructor
@@ -56,8 +56,8 @@ package constructor;
 	}
  ----------------------------------------------------------------
  
- 					*** toString() ***
- 					==================
+ 		*** toString() ***
+ 		==================
  
  => it is predefined java method
  => it is used to display the information of objects

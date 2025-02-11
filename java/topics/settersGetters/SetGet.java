@@ -1,7 +1,7 @@
 package SetterGetter;
 /*
-			*** Setter Getter ***
-			=====================
+		*** Setter Getter ***
+		=====================
  ----------------------------------------------------------------
 	static variable: Access using class-name
 	instance variable: Access using object-Address(this)
@@ -34,7 +34,7 @@ package SetterGetter;
 	}
  ----------------------------------------------------------------
 	
-	private variables of another class can not be access directly
+   private variables of another class can not be access directly
 	
  ----------------------------------------------------------------
 	public class Code
@@ -97,7 +97,7 @@ package SetterGetter;
 	}
  ----------------------------------------------------------------
  
-	Accessing private instance variable using setters & getters
+     Accessing private instance variable using setters & getters
 	
  ----------------------------------------------------------------	
 	public class Code
@@ -125,52 +125,52 @@ package SetterGetter;
 	}
  ----------------------------------------------------------------
 	
-	Q. write setters & getters for EMPLOYEE Details
-	
-	A. 	public class Code
-		{
-			public static void main(String[] args)
-			{
-				Employee e = new Employee();
-				e.setId(1001);
-				e.setName("Ram");
-				e.setSalary(35000);
-				System.out.println("Details : "+e.getId()+","+e.getName()+","+e.getSalary);
-			}
-		}
-		class Employee
-		{
-			private int id;
-			private String name;
-			private double salary;
-			
-			public void setId(int id)
-			{
-				this.id = id;
-			}
-			public void setName(String name)
-			{
-				this.name = name;
-			}
-			public void setSalary(double salary)
-			{
-				this.salary = salary;
-			}
-			
-			
-			public int getId()
-			{
-				return this.id;
-			}
-			public String getName()
-			{
-				return this.name;
-			}
-			public double getSalary()
-			{
-				return this.salary;
-			}
-		}
+Q. write setters & getters for EMPLOYEE Details
+public class Code
+{
+	public static void main(String[] args)
+	{
+		Employee e = new Employee();
+		e.setId(1001);
+		e.setName("Ram");
+		e.setSalary(35000);
+		System.out.println("Details : "+e.getId()+","+e.getName()+","+e.getSalary());
+	}
+}
+class Employee
+{
+	private int id;
+	private String name;
+	private double salary;
+
+	public void setId(int id)
+	{
+		this.id = id;
+	}
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+	public void setSalary(double salary)
+	{
+		this.salary = salary;
+	}
+
+
+	public int getId()
+	{
+		return this.id;
+	}
+	public String getName()
+	{
+		return this.name;
+	}
+	public double getSalary()
+	{
+		return this.salary;
+	}
+}
+
  ----------------------------------------------------------------
 */
 public class SetGet 

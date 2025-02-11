@@ -218,8 +218,8 @@ package variables;
 		}
  ----------------------------------------------------------------
  
-			*** Constructor ***
-			===================
+		*** Constructor ***
+		===================
  => defining a method using class name
  => return type is not allowed for the constructor
  => constructor executes in object creation process
@@ -272,8 +272,8 @@ package variables;
  
  
  
- 			*** toString() ***
- 
+ 		*** toString() ***
+ 		==================
  => it is predefined java method
  => it is used to display the information of objects
  => toString method automatically executes when you print 

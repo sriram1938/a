@@ -11,7 +11,6 @@ public class SriRam
 				 * * * * 
 				 * * * * *
 		 */
-		System.out.println("=========");
 		for(int i=1;i<=5;i++)
 		{
 			for(int j=1;j<=i;j++)
@@ -20,6 +19,7 @@ public class SriRam
 			}
 			System.out.println();
 		}
+		System.out.println("=========");
 		/*
 				 * * * * * 
 				 * * * * 
@@ -27,7 +27,6 @@ public class SriRam
 				 * * 
 				 * 
 		 */
-		System.out.println("=========");
 		for(int i=5;i>=1;i--)
 		{
 			for(int j=1;j<=i;j++)
@@ -36,6 +35,7 @@ public class SriRam
 			}
 			System.out.println();
 		}
+		System.out.println("=========");
 		/*
 			         	* 
 				      * * 
@@ -43,7 +43,6 @@ public class SriRam
 				  * * * * 
 				* * * * * 
 		 */
-		System.out.println("=========");
 		for(int i=1;i<=5;i++)
 		{
 			for(int s=1;s<=5-i;s++)
@@ -56,6 +55,7 @@ public class SriRam
 			}
 			System.out.println();
 		}
+		System.out.println("=========");
 		/*
 			 	* * * * * 
 				  * * * * 
@@ -63,7 +63,6 @@ public class SriRam
 				      * * 
 				        * 
 		 */
-		System.out.println("=========");
 		for(int i=5;i>=1;i--)
 		{
 			for(int s=1;s<=5-i;s++)
@@ -76,6 +75,7 @@ public class SriRam
 			}
 			System.out.println();
 		}
+		System.out.println("=========");
 		/*
 		 		* 
 				* * 
@@ -88,7 +88,6 @@ public class SriRam
 				* 
 
 		 */
-		System.out.println("=========");
 		for(int i=1;i<=5;i++)
 		{
 			for(int j=1;j<=i;j++)
@@ -105,6 +104,7 @@ public class SriRam
 			}
 			System.out.println();
 		}
+		System.out.println("=========");
 		/*
 		 		* * * * * 
 				* * * * 
@@ -116,7 +116,6 @@ public class SriRam
 				* * * * 
 				* * * * * 
 		 */
-		System.out.println("=========");
 		for(int i=5;i>=1;i--)
 		{
 			for(int j=1;j<=i;j++)
@@ -133,6 +132,7 @@ public class SriRam
 			}
 			System.out.println();
 		}
+		System.out.println("=========");
 		/*
 		 		* * * * * 
 				  * * * * 
@@ -144,7 +144,6 @@ public class SriRam
 				  * * * * 
 				* * * * * 
 		 */
-		System.out.println("=========");
 		for(int i=5;i>=1;i--)
 		{
 			for(int s=1;s<=5-i;s++)
@@ -169,6 +168,7 @@ public class SriRam
 			}
 			System.out.println();
 		}
+		System.out.println("=========");
 		/*
 		 		*       
 				**      
@@ -179,7 +179,6 @@ public class SriRam
 				*     * 
 				********
 		 */
-		System.out.println("=========");
 		for(int i=1;i<=8;i++)
 		{
 			for(int j=1;j<=8;j++)
@@ -195,6 +194,7 @@ public class SriRam
 			}
 			System.out.println();
 		}
+		System.out.println("=========");
 		/*
 		 		********
 				*     * 
@@ -205,7 +205,6 @@ public class SriRam
 				**      
 				*       
 		 */
-		System.out.println("=========");
 		for(int i=1;i<=8;i++)
 		{
 			for(int j=1;j<=8;j++)
@@ -221,6 +220,7 @@ public class SriRam
 			}
 			System.out.println();
 		}
+		System.out.println("=========");
 		/*
 		 		********
 				 *     *
@@ -231,7 +231,6 @@ public class SriRam
 				      **
 				       *
 		 */
-		System.out.println("=========");
 		for(int i=1;i<=8;i++)
 		{
 			for(int j=1;j<=8;j++)
@@ -247,6 +246,7 @@ public class SriRam
 			}
 			System.out.println();
 		}
+		System.out.println("=========");
 		/*
   					       *
 					      **
@@ -257,7 +257,6 @@ public class SriRam
 					 *     *
 					********
 		 */
-		System.out.println("=========");
 		for(int i=1;i<=8;i++)
 		{
 			for(int j=1;j<=8;j++)
@@ -273,6 +272,7 @@ public class SriRam
 			}
 			System.out.println();
 		}
+		System.out.println("==================");
 		/*
 		         		* 
 				      * * * 
@@ -280,7 +280,6 @@ public class SriRam
 				  * * * * * * * 
 				* * * * * * * * * 
 		 */
-		System.out.println("==================");
 		for(int i=1;i<=5;i++)
 		{
 			for(int s=1;s<=5-i;s++)
@@ -297,6 +296,7 @@ public class SriRam
 			}
 			System.out.println();
 		}
+		System.out.println("==================");
 		/*
 		         		*         
 				      *   *       
@@ -304,7 +304,6 @@ public class SriRam
 				  *           *   
 				* * * * * * * * * 
 		 */
-		System.out.println("==================");
 		for(int i=1;i<=5;i++)
 		{
 			for(int j=1;j<=9;j++)
@@ -320,6 +319,7 @@ public class SriRam
 			}
 			System.out.println();
 		}
+		System.out.println("==================");
 		/*
 		         		1 
 				      2 2 2 
@@ -327,7 +327,6 @@ public class SriRam
 				  4 4 4 4 4 4 4 
 				5 5 5 5 5 5 5 5 5 
 		 */
-		System.out.println("==================");
 		for(int i=1;i<=5;i++)
 		{
 			for(int s=1;s<=5-i;s++)
@@ -344,6 +343,7 @@ public class SriRam
 			}
 			System.out.println();
 		}
+		System.out.println("==================");
 		/*
 		 		* * * * * * * * * 
 				  *           *   
@@ -351,7 +351,6 @@ public class SriRam
 				      *   *       
 				        *         
 		 */
-		System.out.println("==================");
 		for(int i=1;i<=5;i++)
 		{
 			for(int j=1;j<=9;j++)
@@ -368,6 +367,7 @@ public class SriRam
 			}
 			System.out.println();
 		}
+		System.out.println("==================");
 		/*
 		 		5 5 5 5 5 5 5 5 5 
 				  4 4 4 4 4 4 4 
@@ -376,7 +376,6 @@ public class SriRam
 				        1 
 
 		 */
-		System.out.println("==================");
 		for(int i=5;i>=1;i--)
 		{
 			for(int s=1;s<=5-i;s++)

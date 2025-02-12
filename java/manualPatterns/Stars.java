@@ -1,6 +1,6 @@
-package ManualPatterns;
+package ManualPatternsStar;
 
-public class Stars 
+public class SriRam 
 {
 	public static void main(String[] args) 
 	{
@@ -248,7 +248,7 @@ public class Stars
 			System.out.println();
 		}
 		/*
-		       			   *
+  					       *
 					      **
 					     * *
 					    *  *
